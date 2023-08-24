@@ -1,0 +1,59 @@
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: #aaa;
+  font-weight: 200;
+
+  .logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+
+    .logo-text {
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      line-height: 0.85rem;
+
+      div {
+        text-transform: uppercase;
+        animation: logo-text-spacing 0.8s alternate forwards;
+        &::first-letter {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .logo-image {
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+  .language-toggle-wrapper {
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@keyframes logo-text-spacing {
+  0% {
+    letter-spacing: normal;
+  }
+  100% {
+    letter-spacing: 0.2rem;
+  }
+}
