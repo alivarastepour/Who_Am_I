@@ -1,0 +1,39 @@
+.quote-wrapper {
+  padding: 4rem;
+  max-width: 600px;
+  color: #fff;
+
+  .quote {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 0.9rem;
+    text-align: justify;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      border-bottom: 2px solid red;
+      top: -3px;
+      left: 5px;
+      width: 23px;
+      height: 0;
+    }
+    &::first-letter {
+      position: relative;
+      font-size: 1.6rem;
+      opacity: 0.8;
+    }
+  }
+
+  .author {
+    font-size: 0.7rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #aaa;
+    letter-spacing: 0.1rem;
+  }
+}
