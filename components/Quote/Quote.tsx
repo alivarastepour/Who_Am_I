@@ -4,6 +4,7 @@ const Quote = () => {
   return (
     <>
       <div className={styles["quote-wrapper"]}>
+        <div className={styles["quote-background"]}></div>
         <div className={styles["quote"]}>
           Well, this is the reason. We bow to the inevitable. We're not wheat,
           we're buckwheat! When a storm comes along it flattens ripe wheat
