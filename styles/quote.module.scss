@@ -1,18 +1,15 @@
 @import "./variables.scss";
 
-.quote-wrapper {
+.quote-background-wrapper {
   position: relative;
-  padding: 4rem;
-  color: $primary_text_color;
   width: 100%;
-  min-height: 500px;
-
+  height: calc(100vh - 100px);
   .quote-background {
     position: absolute;
     width: calc(100% - 4rem);
     height: calc(100% - 4rem);
     background: radial-gradient(
-      circle at 20% 80%,
+      circle at 70% 70%,
       $secondary_background_color,
       $primary_background_color 30%
     );
@@ -20,84 +17,98 @@
     filter: blur(100px);
     opacity: 0.9;
   }
-  .quote {
-    font-style: italic;
-    font-weight: 200;
-    font-size: 1.5rem;
-    text-align: justify;
-    letter-spacing: 0.05rem;
-    line-height: 2.5rem;
-    max-width: 1000px;
-    position: relative;
-    padding-left: 5rem;
-    &::before {
-      margin-left: 5rem;
-      position: absolute;
-      content: "";
-      border-bottom: 2px solid #183d3d;
-      top: -5px;
-      left: 7px;
-      width: 45px;
-      height: 0;
-    }
-    &::first-letter {
-      position: relative;
-      font-size: 3rem;
-      opacity: 0.8;
-    }
-  }
 
-  .author {
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    color: $secondary_text_color;
-    letter-spacing: 0.1rem;
-    padding-left: 5rem;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
   .quote-wrapper {
-    padding: 4rem 1rem;
+    position: relative;
+    padding: 4rem;
+    color: $primary_text_color;
+    width: 100%;
+    min-height: 500px;
+    height: calc(100vh - 100px);
+
     .quote {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      font-style: italic;
+      font-weight: 200;
+      font-size: 1.5rem;
+      text-align: justify;
+      letter-spacing: 0.05rem;
+      line-height: 2.5rem;
+      max-width: 1000px;
+      position: relative;
+      padding-left: 5rem;
       &::before {
-        margin-left: 1rem;
+        margin-left: 5rem;
+        position: absolute;
+        content: "";
+        border-bottom: 2px solid #183d3d;
+        top: -5px;
+        left: 7px;
+        width: 45px;
+        height: 0;
+      }
+      &::first-letter {
+        position: relative;
+        font-size: 3rem;
+        opacity: 0.8;
       }
     }
+
     .author {
-      padding-left: 0;
+      font-size: 1.1rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      color: $secondary_text_color;
+      letter-spacing: 0.1rem;
+      padding-left: 5rem;
+      z-index: 200;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .quote-background-wrapper {
+    .quote-wrapper {
+      padding: 4rem 1rem;
+      .quote {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        &::before {
+          margin-left: 1rem;
+        }
+      }
+      .author {
+        padding-left: 0;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .quote-wrapper {
-    .quote {
-      font-size: 1.2rem;
-      line-height: 2rem;
-      &::before {
-        width: 30px;
-        left: 5px;
+  .quote-background-wrapper {
+    .quote-wrapper {
+      .quote {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        &::before {
+          width: 30px;
+          left: 5px;
+        }
+        &::first-letter {
+          font-size: 2rem;
+        }
       }
-      &::first-letter {
-        font-size: 2rem;
-      }
-    }
-    .author {
     }
   }
 }
 
 @media only screen and (max-width: 475px) {
-  .quote-wrapper {
-    padding: 1rem;
-    .author {
-      font-size: 0.9rem;
+  .quote-background-wrapper {
+    .quote-wrapper {
+      padding: 1rem;
+      .author {
+        font-size: 0.9rem;
+      }
     }
   }
 }
