@@ -58,3 +58,19 @@
     padding-left: 5rem;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .quote-wrapper {
+    padding: 4rem 1rem;
+    .quote {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      &::before {
+        margin-left: 1rem;
+      }
+    }
+    .author {
+      padding-left: 0;
+    }
+  }
+}
