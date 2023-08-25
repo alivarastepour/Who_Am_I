@@ -16,8 +16,8 @@ const Header = () => {
               <Image
                 alt="site logo; contains ali varaste pour's initials tied to each other"
                 src={Logo}
-                width={38}
-                height={25}
+                width={60}
+                height={40}
               />
             </div>
           </div>

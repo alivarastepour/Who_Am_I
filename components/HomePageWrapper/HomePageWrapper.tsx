@@ -8,9 +8,9 @@ const HomePageWrapper = () => {
   return (
     <>
       <div className={inter.className}>
-        <header>
-          <Header />
-        </header>
+        {/* <header> */}
+        <Header />
+        {/* </header> */}
         <Quote />
       </div>
     </>

@@ -5,14 +5,14 @@
   padding: 4rem;
   color: $primary_text_color;
   width: 100%;
-  height: 400px;
+  min-height: 500px;
 
   .quote-background {
     position: absolute;
     width: calc(100% - 4rem);
     height: calc(100% - 4rem);
     background: radial-gradient(
-      circle at 20% 50%,
+      circle at 20% 80%,
       $secondary_background_color,
       $primary_background_color 30%
     );
@@ -23,11 +23,11 @@
   .quote {
     font-style: italic;
     font-weight: 200;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     text-align: justify;
     letter-spacing: 0.05rem;
-    line-height: 1.5rem;
-    max-width: 600px;
+    line-height: 2.5rem;
+    max-width: 1000px;
     position: relative;
     padding-left: 5rem;
     &::before {
@@ -35,31 +35,31 @@
       position: absolute;
       content: "";
       border-bottom: 2px solid #183d3d;
-      top: -3px;
-      left: 5px;
-      width: 23px;
+      top: -5px;
+      left: 7px;
+      width: 45px;
       height: 0;
     }
     &::first-letter {
       position: relative;
-      font-size: 1.6rem;
+      font-size: 3rem;
       opacity: 0.8;
     }
   }
 
   .author {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-transform: capitalize;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     color: $secondary_text_color;
     letter-spacing: 0.1rem;
     padding-left: 5rem;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   .quote-wrapper {
     padding: 4rem 1rem;
     .quote {
@@ -71,6 +71,33 @@
     }
     .author {
       padding-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .quote-wrapper {
+    .quote {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      &::before {
+        width: 30px;
+        left: 5px;
+      }
+      &::first-letter {
+        font-size: 2rem;
+      }
+    }
+    .author {
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .quote-wrapper {
+    padding: 1rem;
+    .author {
+      font-size: 0.9rem;
     }
   }
 }
