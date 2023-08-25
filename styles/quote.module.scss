@@ -44,7 +44,6 @@
 
     .author {
       position: relative;
-
       font-size: 1.1rem;
       font-weight: 400;
       text-transform: capitalize;
@@ -53,7 +52,6 @@
       color: $secondary_text_color;
       letter-spacing: 0.1rem;
       padding-left: 5rem;
-      z-index: 200;
     }
   }
 }
