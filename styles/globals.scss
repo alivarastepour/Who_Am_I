@@ -15,5 +15,31 @@ html {
 body {
   margin: 0;
   padding: 0;
-  // background-color: $primary_background_color;
+}
+
+.sliding-header {
+  &::after {
+    animation: slide-up 3s forwards cubic-bezier(0, 1.15, 1, -0.11);
+  }
+  &::before {
+    animation: slide-down 3s forwards cubic-bezier(0, 1.15, 1, -0.11);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(80px);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-80px);
+  }
 }
