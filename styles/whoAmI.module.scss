@@ -1,21 +1,66 @@
 @import "./variables.scss";
+.who-am-i-grid-wrapper {
+  display: grid;
+  place-content: center;
+  min-height: calc(100vh - 100px);
 
-.who-am-i-wrapper {
-  padding: 1rem;
-  position: relative;
+  .who-am-i-wrapper {
+    padding: 2rem 0 2rem 2rem;
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: ce;
+    // align-items: center;
 
-  .header {
-    font-size: 4rem;
-    font-weight: 800;
-    color: white;
-    text-transform: capitalize;
-    background-image: linear-gradient(45deg, #111, $secondary_background_color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    // text-align: right;
-    padding-right: 5rem;
+    .header {
+      min-height: 300px;
+      font-size: 7rem;
+      font-weight: 800;
+      color: white;
+      text-transform: capitalize;
+      transform: translateY(40px);
+      background-image: linear-gradient(
+        45deg,
+        #111,
+        $secondary_background_color
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      // padding-left: 5rem;
+
+      &::after {
+        // padding-left: 5rem;
+        // padding: 2rem 0 2rem 2rem;
+        position: absolute;
+        content: "who am i?";
+        top: 0px;
+        left: 0;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+      }
+      &::before {
+        // padding: 2rem 0 2rem 2rem;
+        // padding-left: 5rem;
+
+        position: absolute;
+        content: "who am i?";
+        top: 0px;
+        left: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .body {
+      padding-right: 2rem;
+      flex: 0 0 50%;
+      font-size: 1.4rem;
+      text-align: justify;
+      font-weight: 300;
+    }
   }
 }
