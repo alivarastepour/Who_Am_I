@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 * {
   box-sizing: border-box;
   &::selection {
@@ -13,5 +15,5 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #040D12;
+  background-color: $primary_background_color;
 }
