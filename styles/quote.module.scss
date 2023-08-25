@@ -3,11 +3,15 @@
 .quote-background-wrapper {
   position: relative;
   width: 100%;
-  height: calc(100vh - 100px);
+  min-height: 100vh;
+  background-color: $primary_background_color;
+  // max-height: calc(100vh - 100px);
   .quote-background {
     position: absolute;
-    width: calc(100% - 4rem);
-    height: calc(100% - 4rem);
+    // width: calc(100% - 4rem);
+    // height: calc(100% - 4rem);
+    height: 100%;
+    width: 100%;
     background: radial-gradient(
       circle at 70% 70%,
       $secondary_background_color,
@@ -23,9 +27,9 @@
     padding: 4rem;
     color: $primary_text_color;
     width: 100%;
-    min-height: 500px;
-    height: calc(100vh - 100px);
-
+    height: 100%;
+    // width: 100%;
+    // min-height: 500px;
     .quote {
       font-style: italic;
       font-weight: 200;
@@ -54,6 +58,8 @@
     }
 
     .author {
+      position: relative;
+
       font-size: 1.1rem;
       font-weight: 400;
       text-transform: capitalize;
