@@ -3,6 +3,7 @@
   display: grid;
   place-content: center;
   min-height: calc(100vh - 100px);
+  position: relative;
 
   .who-am-i-wrapper {
     padding: 2rem 0 2rem 2rem;
@@ -10,14 +11,15 @@
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     // align-items: ce;
     // align-items: center;
 
     .header {
       min-height: 300px;
-      font-size: 7rem;
+      font-size: 6rem;
       font-weight: 800;
       color: white;
       text-transform: capitalize;
@@ -45,9 +47,6 @@
         -webkit-text-stroke-color: black;
       }
       &::before {
-        // padding: 2rem 0 2rem 2rem;
-        // padding-left: 5rem;
-
         position: absolute;
         content: "who am i?";
         top: 0px;
@@ -60,7 +59,11 @@
       flex: 0 0 50%;
       font-size: 1.4rem;
       text-align: justify;
-      font-weight: 300;
+      font-weight: 500;
+      line-height: 2rem;
+      transform: translateX(1rem);
+      margin-right: 1rem;
+      opacity: 0;
     }
   }
 }

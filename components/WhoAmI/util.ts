@@ -8,15 +8,16 @@ export function handleHeaderInViewport(
     if (!entry || !entry.isIntersecting) return;
 
     const header = document.querySelector("#who-am-i-title");
-    if (!header) return;
+    const body = document.querySelector("#who-am-i-body");
+    if (!header || !body) return;
 
     header.classList.add("sliding-header");
+    body.classList.add("sliding-body");
   }
 
   const observer = new IntersectionObserver(intersectionCallback, {
     root: null,
-    threshold: [1.0],
-    rootMargin: "30px 0px 0px",
+    threshold: [0.75],
   });
 
   const elementToObserve = get(targetElementID);

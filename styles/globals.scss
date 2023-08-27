@@ -19,11 +19,17 @@ body {
 
 .sliding-header {
   &::after {
-    animation: slide-up 3s forwards cubic-bezier(0, 1.15, 1, -0.11);
+    animation: slide-up 3s forwards cubic-bezier(1, 0, 0.02, 0.98);
   }
   &::before {
-    animation: slide-down 3s forwards cubic-bezier(0, 1.15, 1, -0.11);
+    animation: slide-down 3s forwards cubic-bezier(1, 0, 0.02, 0.98);
   }
+}
+
+.sliding-body {
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-1rem) !important;
+  opacity: 1 !important;
 }
 
 @keyframes slide-up {
