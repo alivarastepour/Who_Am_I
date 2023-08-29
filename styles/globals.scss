@@ -27,9 +27,7 @@ body {
 }
 
 .sliding-body {
-  transition: all 0.8s ease-in-out;
-  transform: translateX(-1rem) !important;
-  opacity: 1 !important;
+  animation: slide-left 0.8s forwards ease-in-out;
 }
 
 @keyframes slide-up {
@@ -47,5 +45,33 @@ body {
   }
   100% {
     transform: translateY(-80px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sliding-header {
+    animation: slide-right 0.8s forwards ease-in-out;
   }
 }

@@ -1,7 +1,5 @@
 @import "./variables.scss";
 .who-am-i-grid-wrapper {
-  display: grid;
-  place-content: center;
   min-height: calc(100vh - 100px);
   position: relative;
 
@@ -64,6 +62,60 @@
       transform: translateX(1rem);
       margin-right: 1rem;
       opacity: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .who-am-i-grid-wrapper {
+    .who-am-i-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      .header {
+        flex: unset;
+        font-size: 4rem;
+        min-height: unset;
+        transform: unset;
+        &::before {
+          display: none;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .who-am-i-grid-wrapper {
+    .who-am-i-wrapper {
+      padding-top: unset;
+      padding-left: 1rem;
+      .header {
+        font-size: 3.5rem;
+      }
+      .body {
+        padding-right: unset;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .who-am-i-grid-wrapper {
+    .who-am-i-wrapper {
+      padding-top: unset;
+      padding-left: 1rem;
+      .header {
+        font-size: 3rem;
+      }
+      .body {
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+      }
     }
   }
 }
