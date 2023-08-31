@@ -17,20 +17,43 @@ body {
   padding: 0;
 }
 
-.sliding-header {
+.who-am-i-sliding-header {
   &::after {
-    animation: slide-up 3s forwards cubic-bezier(1, 0, 0.02, 0.98);
+    animation: who-am-i-slide-up 3s forwards cubic-bezier(1, 0, 0.02, 0.98);
   }
   &::before {
-    animation: slide-down 3s forwards cubic-bezier(1, 0, 0.02, 0.98);
+    animation: who-am-i-slide-down 3s forwards cubic-bezier(1, 0, 0.02, 0.98);
   }
 }
 
-.sliding-body {
-  animation: slide-left 0.8s forwards ease-in-out;
+.who-am-i-sliding-body {
+  animation: who-am-i-slide-left 0.8s forwards ease-in-out;
 }
 
-@keyframes slide-up {
+.all-in-one-fade-in-background {
+  animation: all-in-one-fade-in-background 2s forwards ease;
+}
+.all-in-one-sliding-title {
+  animation: all-in-one-sliding-title 2s forwards ease-out;
+}
+.all-in-one-sliding-feature-1 {
+  animation-name: all-in-one-f1;
+  animation-delay: 0ms;
+}
+
+.all-in-one-sliding-feature-2 {
+  animation-name: all-in-one-f2;
+  animation-delay: 190ms;
+}
+.all-in-one-sliding-feature-3 {
+  animation-name: all-in-one-f3;
+  animation-delay: 200ms;
+}
+.all-in-one-sliding-feature-4 {
+  animation-name: all-in-one-f4;
+  animation-delay: 300ms;
+}
+@keyframes who-am-i-slide-up {
   0% {
     transform: translateY(0);
   }
@@ -39,7 +62,7 @@ body {
   }
 }
 
-@keyframes slide-down {
+@keyframes who-am-i-slide-down {
   0% {
     transform: translateY(0);
   }
@@ -48,7 +71,7 @@ body {
   }
 }
 
-@keyframes slide-left {
+@keyframes who-am-i-slide-left {
   0% {
     transform: translateX(1rem);
     opacity: 0;
@@ -59,7 +82,7 @@ body {
   }
 }
 
-@keyframes slide-right {
+@keyframes who-am-i-slide-right {
   0% {
     transform: translateX(-1rem);
     opacity: 0;
@@ -70,8 +93,58 @@ body {
   }
 }
 
+@keyframes all-in-one-sliding-title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes all-in-one-fade-in-background {
+  from {
+    filter: blur(600px);
+    opacity: 0.2;
+  }
+  to {
+    background: radial-gradient(
+      circle at 50% 50%,
+      #9f0d7f,
+      $primary_background_color 30%
+    );
+
+    filter: blur(100px);
+    opacity: 0.9;
+  }
+}
+
+@keyframes all-in-one-f1 {
+  100% {
+    transform: translate(-250px, 80px);
+  }
+}
+
+@keyframes all-in-one-f2 {
+  100% {
+    transform: translate(-350px, -20px);
+  }
+}
+
+@keyframes all-in-one-f3 {
+  100% {
+    transform: translate(350px, 80px);
+  }
+}
+
+@keyframes all-in-one-f4 {
+  100% {
+    transform: translate(300px, -340px);
+  }
+}
+
 @media only screen and (max-width: 1200px) {
-  .sliding-header {
-    animation: slide-right 0.8s forwards ease-in-out;
+  .who-am-i-sliding-header {
+    animation: who-am-i-slide-right 0.8s forwards ease-in-out;
   }
 }
