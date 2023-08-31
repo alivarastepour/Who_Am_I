@@ -31,27 +31,36 @@ body {
 }
 
 .all-in-one-fade-in-background {
-  animation: all-in-one-fade-in-background 2s forwards ease;
+  animation: all-in-one-fade-in-background 3s forwards ease;
 }
 .all-in-one-sliding-title {
   animation: all-in-one-sliding-title 2s forwards ease-out;
 }
+
 .all-in-one-sliding-feature-1 {
-  animation-name: all-in-one-f1;
-  animation-delay: 0ms;
+  transform: translate(-350px, 40px);
+  &:hover {
+    transform: translate(-350px, 40px) scale(5);
+  }
 }
 
 .all-in-one-sliding-feature-2 {
-  animation-name: all-in-one-f2;
-  animation-delay: 190ms;
+  transform: translate(-330px, 80px);
+  &:hover {
+    transform: translate(-330px, 80px) scale(5);
+  }
 }
 .all-in-one-sliding-feature-3 {
-  animation-name: all-in-one-f3;
-  animation-delay: 200ms;
+  transform: translate(550px, 50px);
+  &:hover {
+    transform: translate(550px, 50px) scale(5);
+  }
 }
 .all-in-one-sliding-feature-4 {
-  animation-name: all-in-one-f4;
-  animation-delay: 300ms;
+  transform: translate(170px, -290px);
+  &:hover {
+    transform: translate(170px, -290px) scale(5);
+  }
 }
 @keyframes who-am-i-slide-up {
   0% {
@@ -104,8 +113,8 @@ body {
 
 @keyframes all-in-one-fade-in-background {
   from {
-    filter: blur(600px);
-    opacity: 0.2;
+    filter: blur(700px);
+    opacity: 0.1;
   }
   to {
     background: radial-gradient(
@@ -116,30 +125,6 @@ body {
 
     filter: blur(100px);
     opacity: 0.9;
-  }
-}
-
-@keyframes all-in-one-f1 {
-  100% {
-    transform: translate(-250px, 80px);
-  }
-}
-
-@keyframes all-in-one-f2 {
-  100% {
-    transform: translate(-350px, -20px);
-  }
-}
-
-@keyframes all-in-one-f3 {
-  100% {
-    transform: translate(350px, 80px);
-  }
-}
-
-@keyframes all-in-one-f4 {
-  100% {
-    transform: translate(300px, -340px);
   }
 }
 

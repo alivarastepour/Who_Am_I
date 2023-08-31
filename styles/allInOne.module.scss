@@ -19,6 +19,7 @@
     bottom: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
+    text-align: center;
     font-weight: 800;
     color: #fff;
     text-transform: capitalize;
@@ -30,32 +31,44 @@
     border-radius: 50%;
     border: 1px solid;
     position: absolute;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.92, -0.36, 0, 1.27);
-    animation-fill-mode: forwards;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform cubic-bezier(0.92, -0.36, 0, 1.27) 1s;
+
+    &:hover {
+      z-index: 200;
+    }
   }
 
   .feature-container-1 {
-    background-color: #fff;
+    background-color: #322653;
+    border-color: #322653;
     right: -150px;
+    transition-delay: 0ms;
   }
 
   .feature-container-2 {
-    background-color: #fff;
+    background-color: #8062d6;
+    border-color: #8062d6;
     right: -150px;
     top: 300px;
+    transition-delay: 100ms;
   }
 
   .feature-container-3 {
-    background-color: #fff;
+    background-color: #9288f8;
+    border-color: #9288f8;
     left: -150px;
+    transition-delay: 200ms;
   }
 
   .feature-container-4 {
-    background-color: #fff;
+    background-color: #ffd2d7;
+    border-color: #ffd2d7;
     bottom: -200px;
-    animation-timing-function: cubic-bezier(1, 0.99, 0.02, 0.97);
+    transition-delay: 160ms;
   }
 }
 
