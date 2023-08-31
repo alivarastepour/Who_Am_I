@@ -1,7 +1,5 @@
 import styles from "@/styles/whoAmI.module.scss";
 import { Paytone_One, Bricolage_Grotesque } from "next/font/google";
-import { useEffect } from "react";
-import { handleHeaderInViewport } from "./util";
 import { useIntersection } from "@/hooks/useIntersection";
 
 const paytoneOne = Paytone_One({ subsets: ["latin"], weight: ["400"] });
@@ -14,18 +12,11 @@ const WhoAmI = () => {
   const whoAmIWrapperID: string = "who-am-i-wrapper";
   useIntersection({
     observables: [
-      { className: "sliding-header", id: "who-am-i-title" },
-      { className: "sliding-body", id: "who-am-i-body" },
+      { className: "who-am-i-sliding-header", id: "who-am-i-title" },
+      { className: "who-am-i-sliding-body", id: "who-am-i-body" },
     ],
     parentId: whoAmIWrapperID,
   });
-  // useEffect(() => {
-  //   const observer = handleHeaderInViewport(whoAmIWrapperID);
-
-  //   return () => {
-  //     if (observer) observer.disconnect();
-  //   };
-  // }, []);
   return (
     <>
       <div className={styles["who-am-i-grid-wrapper"]}>
