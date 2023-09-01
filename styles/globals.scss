@@ -47,28 +47,101 @@ body {
 .all-in-one-sliding-feature-1 {
   transform: translate(-300px, 40px);
   &:hover {
-    transform: translate(-300px, 40px) scale(5);
+    transform: translate(-300px, 40px) scale(4);
+
+    .description {
+      display: block !important;
+      position: absolute;
+      transform: translateY(1rem) !important;
+      font-size: 0.2rem;
+      padding: 0 3rem;
+    }
+
+    .title {
+      position: absolute;
+      transform: rotate(-90deg);
+      left: 0;
+      margin-top: 1.8rem;
+      max-width: 200px;
+      opacity: 0.5;
+    }
   }
 }
 
 .all-in-one-sliding-feature-2 {
-  transform: translate(-330px, 80px);
+  transform: translate(-300px, 80px);
   &:hover {
-    transform: translate(-330px, 80px) scale(5);
+    transform: translate(-300px, 80px) scale(4);
+
+    .description {
+      display: block !important;
+      position: absolute;
+      transform: translateY(1rem) !important;
+      font-size: 0.2rem;
+      padding: 0 3rem;
+      top: 0;
+    }
+
+    .title {
+      position: absolute;
+      // transform: rotate(-90deg);
+      top: 50%;
+      left: 0;
+      // margin-top: -1rem;
+      max-width: 200px;
+      opacity: 0.5;
+    }
   }
 }
 .all-in-one-sliding-feature-3 {
-  transform: translate(550px, 50px);
+  transform: translate(300px, 40px);
   &:hover {
-    transform: translate(550px, 50px) scale(5);
+    transform: translate(300px, 40px) scale(4);
+
+    .description {
+      display: block !important;
+      position: absolute;
+      transform: translateY(1rem) !important;
+      font-size: 0.2rem;
+      padding: 0 0 0 4rem;
+    }
+
+    .title {
+      position: absolute;
+      // transform: rotate(-90deg);
+      // left: 0;
+      top: 15%;
+      right: 0;
+      margin-top: 1.8rem;
+      max-width: 200px;
+      opacity: 0.5;
+    }
   }
 }
 .all-in-one-sliding-feature-4 {
-  transform: translate(170px, -290px);
+  transform: translate(300px, 80px);
   &:hover {
-    transform: translate(170px, -290px) scale(5);
+    transform: translate(300px, 80px) scale(4);
+
+    .description {
+      display: block !important;
+      position: absolute;
+      transform: translateY(1rem) !important;
+      font-size: 0.2rem;
+      padding: 0 3rem;
+      top: 0;
+    }
+
+    .title {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      max-width: 200px;
+      opacity: 0.5;
+    }
   }
 }
+
 @keyframes who-am-i-slide-up {
   0% {
     transform: translateY(0);
