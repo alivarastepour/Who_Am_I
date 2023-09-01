@@ -9,6 +9,7 @@ const inter = Inter({
 
 const AllInOne = () => {
   const AllInOneWrapperID = "all-in-one-wrapper";
+  const companyName = "Parsimap";
   useIntersection({
     parentId: AllInOneWrapperID,
     observables: [
@@ -62,13 +63,20 @@ const AllInOne = () => {
           <div className={styles["info-wrapper"]}>
             <div className={`${styles["title"]} title`}>Exprience</div>
             <div className={`${styles["description"]} description`}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Praesentium placeat ex quia eveniet maiores temporibus
-              reprehenderit, perferendis quas minima recusandae impedit dicta
-              rerum quis. Ratione aliquam dicta cupiditate excepturi neque
-              accusantium iste. Cumque aliquam nesciunt, impedit veniam atque
-              pariatur tempora nostrum labore accusamus iste nulla adipisci
-              eaque assumenda consequatur? Sint.
+              I'm currently working as a web front-end developer at
+              <a
+                className={styles["company-homepage"]}
+                target="_blank"
+                href="https://parsimap.ir"
+              >
+                {companyName}
+              </a>
+              . In addition to that, I've always kept an open eye on freelancing
+              positions and have taken on a few projects. I also love
+              open-source contribution although nowadays i don't get to do that
+              a lot. As helping people is always a pleasure for me, i was a
+              Teaching assistant for a couple of times in SBU and a course
+              mentor in an e-learning platform. <a href="#">Read more</a>.
             </div>
           </div>
           <div
@@ -83,13 +91,8 @@ const AllInOne = () => {
           <div className={styles["info-wrapper"]}>
             <div className={`${styles["title"]} title`}>Soft Skills</div>
             <div className={`${styles["description"]} description`}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Praesentium placeat ex quia eveniet maiores temporibus
-              reprehenderit, perferendis quas minima recusandae impedit dicta
-              rerum quis. Ratione aliquam dicta cupiditate excepturi neque
-              accusantium iste. Cumque aliquam nesciunt, impedit veniam atque
-              pariatur tempora nostrum labore accusamus iste nulla adipisci
-              eaque assumenda consequatur? Sint.
+              it is one thing to read about someone, another thing to actually
+              know someone; so ask around, or let's hope we'll meet someday.
             </div>
           </div>
           <div
@@ -104,13 +107,14 @@ const AllInOne = () => {
           <div className={styles["info-wrapper"]}>
             <div className={`${styles["title"]} title`}>Technical Skills</div>
             <div className={`${styles["description"]} description`}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Praesentium placeat ex quia eveniet maiores temporibus
-              reprehenderit, perferendis quas minima recusandae impedit dicta
-              rerum quis. Ratione aliquam dicta cupiditate excepturi neque
-              accusantium iste. Cumque aliquam nesciunt, impedit veniam atque
-              pariatur tempora nostrum labore accusamus iste nulla adipisci
-              eaque assumenda consequatur? Sint.
+              As my primary enthusiasm is web front-end development, my tech
+              stack includes JavaScript and TypeScript as programming languages,
+              ReactJS and Nextjs as frameworks, MUI and CSS preprocessors as
+              styling tools, and Redux as a state management tool. I think it's
+              worth mentioning that although fancy tools have made DX much
+              easier, putting them into proper use requires a solid knowledge of
+              basic concepts. So, I don't limit myself to any specific tool,
+              which makes me open to new technologies.
             </div>
           </div>
           <div
@@ -123,15 +127,12 @@ const AllInOne = () => {
           className={`${styles["feature-container"]} ${styles["feature-container-4"]}`}
         >
           <div className={styles["info-wrapper"]}>
-            <div className={`${styles["title"]} title`}>Hobbies</div>
+            <div className={`${styles["title"]} title`}>Education</div>
             <div className={`${styles["description"]} description`}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Praesentium placeat ex quia eveniet maiores temporibus
-              reprehenderit, perferendis quas minima recusandae impedit dicta
-              rerum quis. Ratione aliquam dicta cupiditate excepturi neque
-              accusantium iste. Cumque aliquam nesciunt, impedit veniam atque
-              pariatur tempora nostrum labore accusamus iste nulla adipisci
-              eaque assumenda consequatur? Sint.
+              For the time being, I'm a senior CE student at Shahid Beheshti
+              University of Tehran. Being in this community has played a crucial
+              role in my career. I've met a lot of wonderful people who have
+              taught me - directly or indirectly - the path to success.
             </div>
           </div>
           <div

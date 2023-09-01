@@ -49,14 +49,19 @@ body {
   &:hover {
     transform: translate(0, 240px) scale(4);
 
+    .border-expansion {
+      animation: none;
+    }
+
     .description {
       display: block !important;
       position: absolute;
-      transform: translateY(1rem) !important;
+      transform: translateY(1.7rem) !important;
       font-size: 0.2rem;
-      // padding: 0 3rem;
-      padding: 0 2rem 0 2rem;
+      padding: 0 1.4rem 0 1.4rem;
       max-width: 80%;
+      font-size: 0.25rem;
+      line-height: 0.35rem;
     }
 
     .title {
@@ -76,6 +81,10 @@ body {
   &:hover {
     transform: translate(-350px, 0) scale(4);
 
+    .border-expansion {
+      animation: none;
+    }
+
     .description {
       display: block !important;
       position: absolute;
@@ -83,7 +92,10 @@ body {
       font-size: 0.2rem;
       padding: 0 3rem;
       top: 0;
+
       // max-width: 80%;
+      // max-width: 80%;
+      font-size: 0.3rem;
     }
 
     .title {
@@ -103,13 +115,20 @@ body {
   &:hover {
     transform: translate(350px, 0) scale(4);
 
+    .border-expansion {
+      animation: none;
+    }
+
     .description {
       display: block !important;
       position: absolute;
-      transform: translateY(1rem) !important;
+      transform: translateY(1.7rem) !important;
       font-size: 0.2rem;
       padding: 0 2rem 0 2rem;
       // max-width: 80%;
+
+      font-size: 0.25rem;
+      line-height: 0.35rem;
     }
 
     .title {
@@ -130,14 +149,20 @@ body {
   &:hover {
     transform: translate(0, -280px) scale(4);
 
+    .border-expansion {
+      animation: none;
+    }
+
     .description {
       display: block !important;
       position: absolute;
       transform: translateY(1rem) !important;
       font-size: 0.2rem;
-      padding: 0 3rem;
+      padding: 0 2.5rem;
       top: 0;
       // max-width: 80%;
+      font-size: 0.3rem;
+      line-height: 0.35rem;
     }
 
     .title {
