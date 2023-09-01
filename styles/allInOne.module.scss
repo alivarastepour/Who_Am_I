@@ -17,7 +17,7 @@
     opacity: 0;
     left: 50%;
     bottom: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     font-size: 2rem;
     text-align: center;
     font-weight: 800;
@@ -72,7 +72,8 @@
   }
 
   .feature-container-1 {
-    right: -150px;
+    top: -150px;
+    right: 150px;
     transition-delay: 0ms;
     background-color: #9f0d7f;
     border-color: #9f0d7f;
@@ -87,7 +88,7 @@
     background-color: #f06d72;
     border-color: #f06d72;
     right: -150px;
-    top: 300px;
+    top: 380px;
     transition-delay: 100ms;
 
     .feature-container-border-container-2 {
@@ -100,6 +101,7 @@
     background-color: #00a8b5;
     border-color: #00a8b5;
     left: -150px;
+    top: 40px;
     transition-delay: 200ms;
 
     .feature-container-border-container-3 {
@@ -111,8 +113,9 @@
   .feature-container-4 {
     background-color: #4eed8b;
     border-color: #4eed8b;
-    left: -150px;
-    top: 300px;
+
+    bottom: -200px;
+    left: 150px;
 
     transition-delay: 160ms;
 

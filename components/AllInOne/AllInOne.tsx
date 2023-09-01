@@ -6,6 +6,7 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "400", "500", "800"],
 });
+
 const AllInOne = () => {
   const AllInOneWrapperID = "all-in-one-wrapper";
   useIntersection({
@@ -48,7 +49,10 @@ const AllInOne = () => {
           id={"all-in-one-background-wrapper"}
           className={styles["all-in-one-background-wrapper"]}
         ></div>
-        <div id={"all-in-one-title"} className={styles["all-in-one-title"]}>
+        <div
+          id={"all-in-one-title"}
+          className={`${styles["all-in-one-title"]} ${inter.className}`}
+        >
           explore different sections for more
         </div>
         <div
