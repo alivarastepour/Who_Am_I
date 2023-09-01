@@ -26,8 +26,8 @@
   }
 
   .feature-container {
-    width: 150px;
-    height: 150px;
+    width: 22vh;
+    height: 22vh;
     border-radius: 50%;
     border: 1px solid;
     position: absolute;
@@ -36,7 +36,8 @@
     justify-content: center;
     align-items: center;
 
-    transition: transform cubic-bezier(0.92, -0.36, 0, 1.27) 1s;
+    // transition: transform cubic-bezier(0.92, -0.36, 0, 1.27) 1s;
+    transition: transform cubic-bezier(1, 0, 0.02, 0.98) 1s;
 
     .feature-container-border-container {
       position: absolute;
@@ -72,7 +73,7 @@
   }
 
   .feature-container-1 {
-    top: -150px;
+    top: -200px;
     right: 150px;
     transition-delay: 0ms;
     background-color: #9f0d7f;
@@ -87,8 +88,8 @@
   .feature-container-2 {
     background-color: #f06d72;
     border-color: #f06d72;
-    right: -150px;
-    top: 380px;
+    right: -200px;
+    bottom: 80px;
     transition-delay: 100ms;
 
     .feature-container-border-container-2 {
@@ -100,7 +101,7 @@
   .feature-container-3 {
     background-color: #00a8b5;
     border-color: #00a8b5;
-    left: -150px;
+    left: -200px;
     top: 40px;
     transition-delay: 200ms;
 
