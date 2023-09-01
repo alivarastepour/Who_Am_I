@@ -37,10 +37,17 @@ body {
   animation: all-in-one-sliding-title 2s forwards ease-out;
 }
 
-.all-in-one-sliding-feature-1 {
-  transform: translate(-350px, 40px);
+.border-expansion {
+  animation: temp 3s infinite ease;
   &:hover {
-    transform: translate(-350px, 40px) scale(5);
+    animation: none;
+  }
+}
+
+.all-in-one-sliding-feature-1 {
+  transform: translate(-300px, 40px);
+  &:hover {
+    transform: translate(-300px, 40px) scale(5);
   }
 }
 
@@ -125,6 +132,19 @@ body {
 
     filter: blur(100px);
     opacity: 0.9;
+  }
+}
+
+@keyframes temp {
+  from {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 230%;
+    height: 230%;
+    opacity: 0;
   }
 }
 
