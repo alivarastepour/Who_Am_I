@@ -165,3 +165,10 @@
     font-size: 4.5rem !important;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .feature-container {
+    width: 155px !important;
+    height: 155px !important;
+  }
+}
