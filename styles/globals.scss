@@ -287,7 +287,7 @@ body {
     &:hover {
       transform: translate(-350px, 0) scale(2.5);
       .title {
-        transform: translate(0, 1.5rem);
+        transform: translate(-0.1rem, 1.5rem);
       }
     }
     .description {
@@ -315,7 +315,7 @@ body {
       transform: translate(0, -280px) scale(2.5);
 
       .title {
-        transform: translate(0.1rem, 1.5rem);
+        transform: translate(0.2rem, 1.5rem);
       }
     }
     .description {
@@ -335,6 +335,14 @@ body {
       }
     }
   }
+
+  .all-in-one-sliding-feature-2 {
+    &:hover {
+      .title {
+        transform: translate(0rem, 1.5rem);
+      }
+    }
+  }
   .all-in-one-sliding-feature-3 {
     &:hover {
       .title {
@@ -347,7 +355,7 @@ body {
       transform: translate(0, -280px) scale(2.5);
 
       .title {
-        transform: translate(0.3rem, 1.7rem);
+        transform: translate(0.37rem, 1.7rem);
       }
     }
   }
