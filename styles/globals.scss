@@ -223,11 +223,12 @@ body {
 @keyframes all-in-one-sliding-title {
   from {
     opacity: 0;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
   }
   to {
     opacity: 1;
     transform: translate(-50%, calc(50% - 2rem));
+    letter-spacing: 0.2rem;
   }
 }
 
@@ -239,8 +240,8 @@ body {
   to {
     background: radial-gradient(
       circle at 50% 50%,
-      #9f0d7f,
-      $primary_background_color 30%
+      $feature_color_title,
+      $primary_background_color 60%
     );
 
     filter: blur(100px);

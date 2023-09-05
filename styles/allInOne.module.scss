@@ -1,3 +1,4 @@
+@import "./variables.scss";
 .all-in-one-wrapper {
   height: calc(100vh - 100px);
   position: relative;
@@ -23,6 +24,8 @@
     font-weight: 800;
     color: #fff;
     text-transform: capitalize;
+    // letter-spacing: 0.05rem;
+    width: 95%;
   }
 
   .feature-container {
@@ -94,44 +97,44 @@
     top: -200px;
     right: 150px;
     transition-delay: 0ms;
-    background-color: #530743;
-    border-color: #530743;
+    background-color: $feature_color_1;
+    border-color: $feature_color_1;
 
     .feature-container-border-container-1 {
-      border: 1px solid #530743;
+      border: 1px solid $feature_color_1;
       animation-delay: 3100ms;
     }
   }
 
   .feature-container-2 {
-    background-color: #810004;
-    border-color: #810004;
+    background-color: $feature_color_2;
+    border-color: $feature_color_2;
     right: -200px;
     bottom: 80px;
     transition-delay: 100ms;
 
     .feature-container-border-container-2 {
-      border: 1px solid #810004;
+      border: 1px solid $feature_color_2;
       animation-delay: 3800ms;
     }
   }
 
   .feature-container-3 {
-    background-color: #035257;
-    border-color: #035257;
+    background-color: $feature_color_3;
+    border-color: $feature_color_3;
     left: -200px;
     top: 40px;
     transition-delay: 200ms;
 
     .feature-container-border-container-3 {
-      border: 1px solid #035257;
+      border: 1px solid $feature_color_3;
       animation-delay: 4480ms;
     }
   }
 
   .feature-container-4 {
-    background-color: #08642b;
-    border-color: #08642b;
+    background-color: $feature_color_4;
+    border-color: $feature_color_4;
 
     bottom: -200px;
     left: 150px;
@@ -139,7 +142,7 @@
     transition-delay: 160ms;
 
     .feature-container-border-container-4 {
-      border: 1px solid #08642b;
+      border: 1px solid $feature_color_4;
       animation-delay: 5400ms;
     }
   }
