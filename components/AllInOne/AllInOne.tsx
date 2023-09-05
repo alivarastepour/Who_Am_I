@@ -1,6 +1,5 @@
 import { useIntersection } from "@/hooks/useIntersection";
 import styles from "@/styles/allInOne.module.scss";
-// exprirence , skills(soft, tech), hobbies
 import { Montserrat as Inter } from "next/font/google";
 const inter = Inter({
   subsets: ["latin"],
@@ -116,6 +115,7 @@ const AllInOne = () => {
               much easier, putting them into proper use requires a solid
               knowledge of basic concepts. So, I don&apos;t limit myself to any
               specific tool, which makes me open to new technologies.
+              <a href="#">Read more</a>.
             </div>
           </div>
           <div
@@ -133,8 +133,8 @@ const AllInOne = () => {
               For the time being, I&apos;m a senior CE student at Shahid
               Beheshti University of Tehran. Being in this community has played
               a crucial role in my career. I&apos;ve met a lot of wonderful
-              people who have taught me - directly or indirectly - the path to
-              success.
+              people who have taught me - directly or indirectly - how to be a
+              better both in my profession and in real life.
             </div>
           </div>
           <div
