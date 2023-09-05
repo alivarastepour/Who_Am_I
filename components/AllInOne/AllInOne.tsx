@@ -109,7 +109,7 @@ const AllInOne = () => {
             <div className={`${styles["description"]} description`}>
               As my primary enthusiasm is web front-end development, my tech
               stack includes JavaScript and TypeScript as programming languages,
-              ReactJS and Nextjs as frameworks, MUI and CSS preprocessors as
+              ReactJS and NextJS as frameworks, MUI and CSS preprocessors as
               styling tools, and Redux as a state management tool. I think it's
               worth mentioning that although fancy tools have made DX much
               easier, putting them into proper use requires a solid knowledge of

@@ -223,7 +223,7 @@ body {
   }
   to {
     opacity: 1;
-    transform: translate(-50%, -2rem);
+    transform: translate(-50%, calc(50% - 2rem));
   }
 }
 
@@ -260,5 +260,63 @@ body {
 @media only screen and (max-width: 1200px) {
   .who-am-i-sliding-header {
     animation: who-am-i-slide-right 0.8s forwards ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .all-in-one-sliding-feature-1 {
+    right: 20px !important;
+    &:hover {
+      transform: translate(0, 240px) scale(2.5);
+      .title {
+        transform: translate(-0.2rem, -1rem);
+      }
+    }
+    .description {
+      padding-right: 1.7rem !important;
+      // padding-left: 0.5rem !important;
+      text-align: justify;
+    }
+  }
+  .all-in-one-sliding-feature-2 {
+    right: -330px !important;
+    &:hover {
+      transform: translate(-350px, 0) scale(2.5);
+      .title {
+        transform: translate(0, 1.5rem);
+      }
+    }
+    .description {
+      font-size: 0.4rem !important;
+    }
+  }
+  .all-in-one-sliding-feature-3 {
+    left: -330px !important;
+    &:hover {
+      transform: translate(350px, 0) scale(2.5);
+      .title {
+        font-size: 0.8rem !important;
+        transform: translate(0.6rem, -1.7rem);
+      }
+    }
+    .description {
+      padding-left: 2.7rem !important;
+      text-align: justify;
+    }
+  }
+  .all-in-one-sliding-feature-4 {
+    left: 20px !important;
+    &:hover {
+      transform: translate(0, -280px) scale(2.5);
+
+      .title {
+        transform: translate(0.1rem, 1.5rem);
+      }
+    }
+    .description {
+      font-size: 0.35rem !important;
+      line-height: 0.45rem !important;
+      padding-left: 2.7rem !important;
+    }
   }
 }
