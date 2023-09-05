@@ -159,3 +159,9 @@
     width: 100%;
   }
 }
+
+@media only screen and (min-height: 900px) {
+  .all-in-one-title {
+    font-size: 4.5rem !important;
+  }
+}
