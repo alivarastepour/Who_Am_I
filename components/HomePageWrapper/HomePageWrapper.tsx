@@ -1,8 +1,8 @@
 import Header from "../Header/Header";
 import Quote from "../Quote/Quote";
 import { Inter } from "next/font/google";
-import WhoAmI from "../WhoAmI/WhoAmI";
 import AllInOne from "../AllInOne/AllInOne";
+import WhoAmI from "../WhoAmI/WhoAmI";
 const inter = Inter({
   subsets: ["latin"],
 });

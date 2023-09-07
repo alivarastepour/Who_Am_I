@@ -1,49 +1,31 @@
 import styles from "@/styles/whoAmI.module.scss";
-import { Paytone_One, Bricolage_Grotesque } from "next/font/google";
-import { useIntersection } from "@/hooks/useIntersection";
+import { Montserrat } from "next/font/google";
 
-const paytoneOne = Paytone_One({ subsets: ["latin"], weight: ["400"] });
-const bricolage_Grotesque = Bricolage_Grotesque({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["500"],
 });
-
 const WhoAmI = () => {
-  const whoAmIWrapperID: string = "who-am-i-wrapper";
-  useIntersection({
-    observables: [
-      { className: "who-am-i-sliding-header", id: "who-am-i-title" },
-      { className: "who-am-i-sliding-body", id: "who-am-i-body" },
-    ],
-    parentId: whoAmIWrapperID,
-  });
   return (
     <>
-      <div className={styles["who-am-i-grid-wrapper"]}>
-        <div className={styles["who-am-i-wrapper"]} id={whoAmIWrapperID}>
-          <div
-            className={`${styles["header"]} ${paytoneOne.className}`}
-            id={"who-am-i-title"}
-          >
-            who am i?
-          </div>
-          <div
-            id={"who-am-i-body"}
-            className={`${styles["body"]}  ${bricolage_Grotesque.className}`}
-          >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est nihil
-            eum nulla eligendi nesciunt maiores quam nam numquam adipisci
-            nostrum. Architecto quae fugiat necessitatibus qui inventore.
-            Voluptatum quod dolorum ex debitis? Temporibus aliquid facere, eos
-            dignissimos consequuntur vitae explicabo deleniti, commodi deserunt
-            eius accusantium odio facilis aperiam magnam debitis! Esse
-            consectetur doloremque itaque perspiciatis voluptate atque excepturi
-            aliquam quod numquam. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptate sed fugit qui aperiam sapiente, voluptas
-            ex, enim veritatis autem, facilis rerum delectus? Minus aspernatur
-            rerum temporibus in vel, explicabo, eveniet corrupti blanditiis ab
-            autem molestias nihil, ea qui distinctio exercitationem!
-          </div>
+      <div className={styles["who-am-i-wrapper"]}>
+        <div
+          id="who-am-i-background-wrapper"
+          className={styles["who-am-i-background-wrapper"]}
+        ></div>
+        <div className={`${styles["body"]} ${montserrat.className}`}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+          minima laboriosam harum nemo amet voluptates consequuntur deleniti
+          distinctio unde cumque corporis culpa vel, animi qui aut rerum quas
+          facere reiciendis doloremque ad, placeat veniam! Perferendis illum
+          sunt rerum cupiditate, nihil delectus vero obcaecati, cum corporis rem
+          qui quos ipsam ullam vitae a. Quis vitae repudiandae aspernatur.
+          Architecto animi explicabo eveniet, voluptate magnam inventore dolorem
+          quae, maiores expedita qui quis aliquid voluptas ad ea incidunt
+          delectus quidem tempore similique est dignissimos perferendis?
+          Possimus molestias excepturi non consequuntur quos voluptas quibusdam
+          alias eum inventore obcaecati ipsam, corporis eius dolores, qui
+          perferendis impedit?
         </div>
       </div>
     </>
