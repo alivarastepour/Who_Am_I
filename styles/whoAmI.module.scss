@@ -25,14 +25,19 @@
     top: 50%;
     transform: translateY(-50%);
     padding: 2rem;
-    width: 60%;
-    height: 70vh;
-    font-size: 1.35rem;
+    width: 70%;
+    // min-height: 70vh;
+    // max-height: 90vh;
+    // height: 80vh;
+    // height: 100%;
+    // border: 1px solid red;
+    font-size: 1.45rem;
     line-height: 2rem;
-    background-color: rgba($primary_background_color, 0.9);
-    // border-radius: 2rem;
+    background-color: rgba($primary_background_color, 1);
+    border-radius: 2rem 0 0 2rem;
     color: white;
     text-align: justify;
+
     &::first-letter {
       font-size: 2.4rem;
     }
@@ -45,5 +50,84 @@
   }
   to {
     background-position: -10000000% -10000000%;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .who-am-i-wrapper {
+    .body {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .who-am-i-wrapper {
+    .body {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .who-am-i-wrapper {
+    .body {
+      font-size: 1.15rem;
+      padding: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .who-am-i-wrapper {
+    justify-content: center;
+    align-items: center;
+    .body {
+      position: relative;
+      transform: none;
+      border-radius: 2rem;
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .who-am-i-wrapper {
+    .who-am-i-background-wrapper {
+      animation-play-state: running;
+      animation-duration: 400000s;
+    }
+    .body {
+      font-size: 1.1rem;
+      line-height: 1.75rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .who-am-i-wrapper {
+    .body {
+      font-size: 0.9rem;
+      line-height: 1.6rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .who-am-i-wrapper {
+    .body {
+      width: 90%;
+      // height: 90vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .who-am-i-wrapper {
+    .body {
+      font-size: 0.85rem;
+      line-height: 1.4rem;
+      padding: 0.5rem;
+    }
   }
 }
