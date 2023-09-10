@@ -16,6 +16,13 @@ const WhoAmI = () => {
 
     function themClickHandler() {
       setBackgroundState("who-am-i-background-I");
+
+      const prevBackground = get("who-am-i-background-wrapper");
+      if (!prevBackground) return;
+
+      setTimeout(() => {
+        prevBackground.classList.remove(styles["who-am-i-background-wrapper"]);
+      }, 2000);
     }
 
     element.addEventListener("click", themClickHandler);
@@ -30,7 +37,11 @@ const WhoAmI = () => {
       <div id="who-am-i-wrapper" className={styles["who-am-i-wrapper"]}>
         <div
           id="who-am-i-background-wrapper"
-          className={`${styles["who-am-i-background-wrapper"]} ${styles[backgroundState]}`}
+          className={`${styles["who-am-i-background-wrapper"]}`}
+        ></div>
+        <div
+          id="who-am-i-background-I-wrapper"
+          className={`${styles[backgroundState]} ${styles["who-am-i-background-I-wrapper"]}`}
         ></div>
         <div className={`${styles["body"]} ${montserrat.className}`}>
           The very first time I found something amusing and enjoyable to work
