@@ -18,6 +18,9 @@
       animation-play-state: running;
     }
   }
+  .who-am-i-background-I {
+    background-image: url("/interstellar.jpg") !important;
+  }
 
   .body {
     position: absolute;
@@ -33,12 +36,30 @@
     color: white;
     text-align: justify;
 
+    span {
+      position: relative;
+      cursor: pointer;
+
+      &:hover::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        bottom: 0;
+        border: 2px solid #fff;
+        animation: extend-before 1s ease forwards;
+      }
+    }
+
     &::first-letter {
       font-size: 2.4rem;
     }
   }
 }
-
+@keyframes extend-before {
+  to {
+    width: 100%;
+  }
+}
 @keyframes move-background {
   from {
     background-position: 0% 0%;
@@ -121,25 +142,15 @@
 
 @media only screen and (max-width: 575px) {
   .who-am-i-wrapper {
-    .who-am-i-background-wrapper {
-      background-image: none;
-      background-color: $primary_background_color;
-    }
     .body {
       width: 90%;
-      background: none;
       border-radius: 0.5rem;
       border: 1px solid #777;
-    }
-    .who-am-i-background-radial {
-      background-image: radial-gradient(
-        circle at 0% 0%,
-        $secondary_background_color,
-        $primary_background_color 15%
-      ) !important;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      animation: fade-in-background 3s forwards ease;
+      background: rgba($primary_background_color, 0.7);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(1.5px);
+      -webkit-backdrop-filter: blur(11.5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
     }
   }
 }

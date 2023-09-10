@@ -1,29 +1,36 @@
+import { get } from "@/common/get";
 import { useIntersection } from "@/hooks/useIntersection";
 import styles from "@/styles/whoAmI.module.scss";
 import { Montserrat } from "next/font/google";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["500"],
 });
 const WhoAmI = () => {
-  useIntersection({
-    observables: [
-      {
-        className: styles["who-am-i-background-radial"],
-        id: "who-am-i-background-wrapper",
-      },
-    ],
-    parentId: "who-am-i-wrapper",
-  });
+  const [backgroundState, setBackgroundState] = useState("");
+  useEffect(() => {
+    const element = get("them");
+    if (!element) return;
+
+    function themClickHandler() {
+      setBackgroundState("who-am-i-background-I");
+    }
+
+    element.addEventListener("click", themClickHandler);
+
+    return () => {
+      element.removeEventListener("click", themClickHandler);
+    };
+  }, []);
 
   return (
     <>
       <div id="who-am-i-wrapper" className={styles["who-am-i-wrapper"]}>
         <div
           id="who-am-i-background-wrapper"
-          className={styles["who-am-i-background-wrapper"]}
+          className={`${styles["who-am-i-background-wrapper"]} ${styles[backgroundState]}`}
         ></div>
         <div className={`${styles["body"]} ${montserrat.className}`}>
           The very first time I found something amusing and enjoyable to work
@@ -34,16 +41,17 @@ const WhoAmI = () => {
           hears a motherboard&apos;s beep. Let&apos;s not forget that sometime
           soon, kids are going to need new shoes (a.k.a the inner child).
           That&apos;s when I figured being interested in an ever-cutting-edge
-          topic with endless paths to wander should be a gift from THEM. Still
-          though, I think CS is not just a way to spend your free time or make
-          some money, it is literally a way of living. Take an ML model for
-          instance; it starts with minimum information and a lot of errors. Then
-          it corrects itself in a way that it thinks is more accurate. This
-          procedure goes on until the accuracy is acceptable or a maximum
-          iteration is exceeded. The same goes for real life. We come to
-          crossroads, we make decisions, we fail or get hurt, but the next time,
-          we use the experience we have to make better decisions. this also goes
-          on as long as we don&apos;t exceed our time on earth.
+          topic with endless paths to wander should be a gift from{" "}
+          <span id="them">THEM</span>. Still though, I think CS is not just a
+          way to spend your free time or make some money, it is literally a way
+          of living. Take an ML model for instance; it starts with minimum
+          information and a lot of errors. Then it corrects itself in a way that
+          it thinks is more accurate. This procedure goes on until the accuracy
+          is acceptable or a maximum iteration is exceeded. The same goes for
+          real life. We come to crossroads, we make decisions, we fail or get
+          hurt, but the next time, we use the experience we have to make better
+          decisions. this also goes on as long as we don&apos;t exceed our time
+          on earth.
         </div>
       </div>
     </>
