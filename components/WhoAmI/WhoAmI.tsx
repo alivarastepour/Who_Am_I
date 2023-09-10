@@ -1,14 +1,26 @@
+import { useIntersection } from "@/hooks/useIntersection";
 import styles from "@/styles/whoAmI.module.scss";
 import { Montserrat } from "next/font/google";
+import { useEffect } from "react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["500"],
 });
 const WhoAmI = () => {
+  useIntersection({
+    observables: [
+      {
+        className: styles["who-am-i-background-radial"],
+        id: "who-am-i-background-wrapper",
+      },
+    ],
+    parentId: "who-am-i-wrapper",
+  });
+
   return (
     <>
-      <div className={styles["who-am-i-wrapper"]}>
+      <div id="who-am-i-wrapper" className={styles["who-am-i-wrapper"]}>
         <div
           id="who-am-i-background-wrapper"
           className={styles["who-am-i-background-wrapper"]}
