@@ -26,11 +26,6 @@
     transform: translateY(-50%);
     padding: 2rem;
     width: 70%;
-    // min-height: 70vh;
-    // max-height: 90vh;
-    // height: 80vh;
-    // height: 100%;
-    // border: 1px solid red;
     font-size: 1.45rem;
     line-height: 2rem;
     background-color: rgba($primary_background_color, 1);
@@ -50,6 +45,12 @@
   }
   to {
     background-position: -1000% -1000%;
+  }
+}
+
+@keyframes fade-in-background {
+  to {
+    background-size: 400% 400%;
   }
 }
 
@@ -121,19 +122,24 @@
 @media only screen and (max-width: 575px) {
   .who-am-i-wrapper {
     .who-am-i-background-wrapper {
-      // background: radial-gradient(
-      //   circle at 30% 20%,
-      //   $secondary_background_color,
-      //   $primary_background_color 30%
-      // );
-      background-size: 60% 10%;
+      background-image: none;
+      background-color: $primary_background_color;
     }
     .body {
-      // background: none;
       width: 90%;
+      background: none;
       border-radius: 0.5rem;
-      // box-shadow: -1px -1px 2px #fff, 1px 1px 2px #fff;
       border: 1px solid #777;
+    }
+    .who-am-i-background-radial {
+      background-image: radial-gradient(
+        circle at 0% 0%,
+        $secondary_background_color,
+        $primary_background_color 15%
+      ) !important;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      animation: fade-in-background 3s forwards ease;
     }
   }
 }
