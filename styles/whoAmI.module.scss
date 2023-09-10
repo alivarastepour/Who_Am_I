@@ -121,17 +121,19 @@
 @media only screen and (max-width: 575px) {
   .who-am-i-wrapper {
     .who-am-i-background-wrapper {
-      background: radial-gradient(
-        circle at 30% 20%,
-        $secondary_background_color,
-        $primary_background_color 30%
-      );
+      // background: radial-gradient(
+      //   circle at 30% 20%,
+      //   $secondary_background_color,
+      //   $primary_background_color 30%
+      // );
+      background-size: 60% 10%;
     }
     .body {
-      background: none;
+      // background: none;
       width: 90%;
-      border-radius: 0.2rem;
-      box-shadow: -1px -1px 2px #fff, 1px 1px 2px #fff;
+      border-radius: 0.5rem;
+      // box-shadow: -1px -1px 2px #fff, 1px 1px 2px #fff;
+      border: 1px solid #777;
     }
   }
 }
