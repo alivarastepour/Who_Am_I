@@ -30,6 +30,27 @@ export const EXPERIENCE_DATA = [
     ],
   },
   {
+    id: 3,
+    duration: {
+      georgian: "octobor 2022 - may 2023",
+      jalali: "mehr 1401 - khordad 1402",
+    },
+    company: {
+      name: "Teaching assistant",
+      homepage: "https://www.sbu.ac.ir/",
+      logo: "/sbu-logo.png",
+      industry: "volunteer work",
+      about: "",
+    },
+    location: {
+      region: "Tehran, tehran",
+      type: "hybrid",
+    },
+    description:
+      "While serving as a teaching assistant at SBU, a significant aspect of my role involved crafting innovative and demanding assignments for the students. These assignments encompassed a wide array of topics, ranging from fundamental programming concepts to advanced topics such as Object-Oriented Programming (OOP), Test-Driven Development (TDD), file and I/O operations, and socket programming, among others. The experience of being a teaching assistant not only allowed me to help students but also enriched my own learning journey, making it a valuable and rewarding experience.",
+    techStack: ["C", "C++", "java"],
+  },
+  {
     id: 1,
     duration: {
       georgian: "september 2022 - present",
@@ -70,26 +91,5 @@ export const EXPERIENCE_DATA = [
     description:
       "In my role as a mentor in Advanced ReactJS course, my responsibilities included assessing students' submissions. These submissions encompassed a variety of ReactJS projects with distinct focuses. Additionally, I provided guidance by addressing their questions related to ReactJS and its ecosystem.",
     techStack: ["ReactJS"],
-  },
-  {
-    id: 3,
-    duration: {
-      georgian: "octobor 2022 - may 2023",
-      jalali: "mehr 1401 - khordad 1402",
-    },
-    company: {
-      name: "Teaching assistant",
-      homepage: "https://www.sbu.ac.ir/",
-      logo: "/sbu-logo.png",
-      industry: "volunteer work",
-      about: "",
-    },
-    location: {
-      region: "Tehran, tehran",
-      type: "hybrid",
-    },
-    description:
-      "While serving as a teaching assistant at SBU, a significant aspect of my role involved crafting innovative and demanding assignments for the students. These assignments encompassed a wide array of topics, ranging from fundamental programming concepts to advanced topics such as Object-Oriented Programming (OOP), Test-Driven Development (TDD), file and I/O operations, and socket programming, among others. The experience of being a teaching assistant not only allowed me to help students but also enriched my own learning journey, making it a valuable and rewarding experience.",
-    techStack: ["C", "C++", "java"],
   },
 ];
