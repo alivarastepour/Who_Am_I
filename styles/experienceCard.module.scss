@@ -14,8 +14,8 @@
   // width: 45%;
   transition: all 0.1s ease;
   position: relative;
-  // min-height: 60vh;
-  height: 100%;
+  min-height: 400px;
+  // height: 100%;
 
   &:hover {
     box-shadow: -1px 1px 5px rgba($color: #fff, $alpha: 0.5),
@@ -43,9 +43,11 @@
       padding-bottom: 0.5rem;
       margin-bottom: 0.5rem;
       width: 100%;
+      position: relative;
       .company-name {
         font-size: 1.8rem;
         font-weight: 600;
+        width: 100%;
       }
       .company-industry {
         font-size: 1rem;
@@ -124,3 +126,33 @@
     }
   }
 }
+
+@media only screen and (max-width: 1300px) {
+  .experience-card-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .experience-card-wrapper {
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .experience-card-wrapper {
+    text-align: left;
+    max-width: unset;
+    width: 100%;
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experience-card-wrapper {
+    flex-direction: column;
+  }
+}
+
+
