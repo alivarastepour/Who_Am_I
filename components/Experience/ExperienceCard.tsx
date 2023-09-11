@@ -22,14 +22,23 @@ const ExperienceCard = ({ info }: { info: (typeof EXPERIENCE_DATA)[0] }) => {
         className={`${styles["experience-card-wrapper"]} ${montserrat.className}`}
       >
         <div className={styles["exprience-card-logo-wrapper"]}>
-          {/* <a href={homepage} target="_blank">
+          {!!logo ? (
+            <a href={homepage} target="_blank">
+              <Image
+                alt={`current logo of ${name} company.`}
+                src={logo}
+                width={70}
+                height={70}
+              />
+            </a>
+          ) : (
             <Image
               alt={`current logo of ${name} company.`}
               src={logo}
-              width={200}
-              height={100}
+              width={70}
+              height={70}
             />
-          </a> */}
+          )}
         </div>
         <div className={styles["exprience-card-info-wrapper"]}>
           <div className={styles["company-info"]}>
@@ -38,15 +47,15 @@ const ExperienceCard = ({ info }: { info: (typeof EXPERIENCE_DATA)[0] }) => {
             <div className={styles["company-about"]}>{about}</div>
           </div>
           <div className={styles["location-duration-info"]}>
-            <div className={styles["locaiton-info"]}>
-              <div className={styles["location-region"]}>{region}</div>
-              <div className={styles["location-type"]}>{type}</div>
-            </div>
+            {region && (
+              <div className={styles["locaiton-info"]}>
+                <div className={styles["location-region"]}>{region}</div>
+                <div className={styles["location-type"]}>{type}</div>
+              </div>
+            )}
             <div className={styles["duration-info"]}>
               <div className={styles["duration-jalali-info"]}>{jalali}</div>
-              <div className={styles["duration-georgian-info"]}>
-                ~ {georgian}
-              </div>
+              <div className={styles["duration-georgian-info"]}>{georgian}</div>
             </div>
           </div>
           <div className={styles["description"]}>{description}</div>

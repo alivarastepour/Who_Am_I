@@ -11,8 +11,11 @@
   color: $primary_text_color;
   margin: 1rem;
   max-width: calc(50% - 2rem);
-
+  // width: 45%;
   transition: all 0.1s ease;
+  position: relative;
+  // min-height: 60vh;
+  height: 100%;
 
   &:hover {
     box-shadow: -1px 1px 5px rgba($color: #fff, $alpha: 0.5),
@@ -20,7 +23,7 @@
   }
 
   .exprience-card-logo-wrapper {
-    background-color: #fff;
+    // background-color: #fff;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -33,10 +36,13 @@
     flex-direction: column;
     align-items: flex-start;
     flex: 0 0 calc(100% - 100px);
+    position: relative;
+    width: 100%;
 
     .company-info {
       padding-bottom: 0.5rem;
       margin-bottom: 0.5rem;
+      width: 100%;
       .company-name {
         font-size: 1.8rem;
         font-weight: 600;
@@ -47,6 +53,7 @@
       .company-about {
         font-size: 0.85rem;
         font-weight: 300;
+        line-height: 1.1rem;
       }
       border-bottom: 2px solid $secondary_border_color;
     }
@@ -65,6 +72,7 @@
       .location-region {
         font-size: 1.2rem;
         font-weight: 600;
+        text-transform: capitalize;
       }
 
       .location-type {
@@ -99,11 +107,14 @@
       gap: 0.4rem;
       justify-content: flex-start;
       align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
       .tech-stach-item {
         border: 1px solid $secondary_border_color;
         border-radius: 0.5rem;
         padding: 0.2rem 0.7rem;
         transition: border-color 0.2s ease;
+        text-transform: capitalize;
 
         &:hover {
           // box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
