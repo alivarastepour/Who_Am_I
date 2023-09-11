@@ -1,0 +1,10 @@
+@import "./variables.scss";
+.experience-wrapper {
+  min-height: calc(100vh - 100px);
+  background: #111;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
