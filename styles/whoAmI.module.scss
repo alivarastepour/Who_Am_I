@@ -187,7 +187,7 @@
       width: 90%;
       border-radius: 0.5rem;
       border: 1px solid rgba(255, 255, 255, 0.18);
-      @include blurry-background();
+      // @include blurry-background();
     }
   }
 }
