@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     transition: transform cubic-bezier(1, 0, 0.02, 0.98) 1s;
 
@@ -87,7 +88,7 @@
     }
 
     &:hover {
-      z-index: 200;
+      z-index: 2;
     }
   }
 
