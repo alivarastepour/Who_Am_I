@@ -61,7 +61,14 @@ const ExperienceCard = ({ info }: { info: (typeof EXPERIENCE_DATA)[0] }) => {
           <div className={styles["description"]}>{description}</div>
           <div className={styles["tech-stach"]}>
             {techStack.map((item: string) => {
-              return <div className={styles["tech-stach-item"]}>{item}</div>;
+              return (
+                <div
+                  key={`${id}-${item}`}
+                  className={styles["tech-stach-item"]}
+                >
+                  {item}
+                </div>
+              );
             })}
           </div>
         </div>
