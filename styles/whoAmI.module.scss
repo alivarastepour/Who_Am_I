@@ -53,7 +53,7 @@
     line-height: 2rem;
     background-color: rgba($primary_background_color, 1);
     border-radius: 2rem 0 0 2rem;
-    color: white;
+    color: $primary_text_color;
     text-align: justify;
     transition: 2s background ease;
 
@@ -66,7 +66,7 @@
         content: "";
         width: 0%;
         bottom: -3px;
-        border: 2px solid #fff;
+        border: 2px solid $primary_text_color;
         animation: extend-before 1s ease forwards;
       }
     }
@@ -187,7 +187,6 @@
       width: 90%;
       border-radius: 0.5rem;
       border: 1px solid rgba(255, 255, 255, 0.18);
-      // @include blurry-background();
     }
   }
 }
