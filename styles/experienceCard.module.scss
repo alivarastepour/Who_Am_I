@@ -1,0 +1,115 @@
+@import "./variables.scss";
+
+.experience-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid $primary_border_color;
+  color: $primary_text_color;
+  margin: 1rem;
+  max-width: calc(50% - 2rem);
+
+  transition: all 0.1s ease;
+
+  &:hover {
+    box-shadow: -1px 1px 5px rgba($color: #fff, $alpha: 0.5),
+      1px -3px 6px rgba($color: #fff, $alpha: 0.3);
+  }
+
+  .exprience-card-logo-wrapper {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    img {
+    }
+  }
+
+  .exprience-card-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 calc(100% - 100px);
+
+    .company-info {
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      .company-name {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+      .company-industry {
+        font-size: 1rem;
+      }
+      .company-about {
+        font-size: 0.85rem;
+        font-weight: 300;
+      }
+      border-bottom: 2px solid $secondary_border_color;
+    }
+
+    .location-duration-info {
+      width: 100%;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid $secondary_border_color;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20%;
+
+      .location-region {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .location-type {
+        font-size: 0.9rem;
+      }
+
+      .duration-info {
+        text-transform: capitalize;
+        .duration-jalali-info {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+        .duration-georgian-info {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .description {
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid $secondary_border_color;
+
+      font-size: 0.85rem;
+      font-weight: 400;
+      line-height: 1.2rem;
+    }
+
+    .tech-stach {
+      display: flex;
+      flex-direction: row;
+      gap: 0.4rem;
+      justify-content: flex-start;
+      align-items: center;
+      .tech-stach-item {
+        border: 1px solid $secondary_border_color;
+        border-radius: 0.5rem;
+        padding: 0.2rem 0.7rem;
+        transition: border-color 0.2s ease;
+
+        &:hover {
+          // box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+          border-color: $primary_border_color;
+        }
+      }
+    }
+  }
+}
