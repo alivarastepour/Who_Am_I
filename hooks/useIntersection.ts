@@ -1,5 +1,4 @@
 import { get } from "@/common/get";
-import { log } from "console";
 import { useEffect } from "react";
 
 export const useIntersection = ({
