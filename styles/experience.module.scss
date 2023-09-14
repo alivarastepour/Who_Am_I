@@ -4,14 +4,163 @@
   background: #111;
   padding: 2rem;
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  .exprerience-header {
+    color: #fff;
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin: 3rem auto 1rem 1rem;
+    letter-spacing: 0.2rem;
+    position: relative;
+    background: none;
+
+    span {
+      display: inline-block;
+      position: inherit;
+      z-index: 2;
+    }
+
+    .e {
+      color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: transparent;
+    }
+  }
+
+  .lamp-effect {
+    .e-0,
+    .e-6,
+    .e-9 {
+      animation: e-lamp-blink 2s forwards, e-lamp-on 1s forwards 2s;
+    }
+
+    .e-9 {
+      animation-delay: 700ms, 2700ms;
+    }
+
+    .e-3 {
+      animation: e-lamp-blink 2s forwards, e-lamp-on 1s forwards 2s,
+        e-lamp-explode 2s forwards;
+      animation-delay: 200ms, 2200ms, 5500ms;
+    }
+
+    .e-0 {
+      animation-delay: 1400ms, 3800ms;
+    }
+  }
+  .experience-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@keyframes e-lamp-blink {
+  from {
+    -webkit-text-stroke-color: transparent;
+  }
+  40% {
+    -webkit-text-stroke-color: #fff;
+  }
+  70% {
+    -webkit-text-stroke-color: transparent;
+  }
+  75% {
+    -webkit-text-stroke-color: #fff;
+  }
+  80% {
+    -webkit-text-stroke-color: transparent;
+  }
+  85% {
+    -webkit-text-stroke-color: #fff;
+  }
+  90% {
+    -webkit-text-stroke-color: transparent;
+  }
+  95% {
+    -webkit-text-stroke-color: #fff;
+  }
+  to {
+    -webkit-text-stroke-color: transparent;
+  }
+}
+
+@keyframes e-lamp-on {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #fff;
+    -webkit-text-stroke-color: transparent;
+  }
+}
+
+@keyframes e-lamp-explode {
+  from {
+    color: #fff;
+    -webkit-text-stroke-color: transparent;
+  }
+  10% {
+    color: transparent;
+    -webkit-text-stroke-color: #fff;
+  }
+  15% {
+    -webkit-text-stroke-color: transparent;
+  }
+  20% {
+    -webkit-text-stroke-color: #fff;
+  }
+  25% {
+    -webkit-text-stroke-color: transparent;
+  }
+  30% {
+    -webkit-text-stroke-color: #fff;
+  }
+  35% {
+    -webkit-text-stroke-color: transparent;
+  }
+  40% {
+    -webkit-text-stroke-color: #fff;
+  }
+  45% {
+    -webkit-text-stroke-color: transparent;
+  }
+  50% {
+    -webkit-text-stroke-color: #fff;
+    transform: unset;
+  }
+  to {
+    -webkit-text-stroke-color: #444;
+    position: inherit;
+    color: transparent;
+  }
 }
 
 @media only screen and (max-width: 850px) {
   .experience-wrapper {
     flex-direction: column;
+    .exprerience-header {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .experience-wrapper {
+    .exprerience-header {
+      text-align: center;
+      margin-left: 0;
+    }
+    .animated-before {
+      letter-spacing: 0.4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .experience-wrapper {
+    .exprerience-header {
+      font-size: 2.7rem;
+    }
   }
 }
 
