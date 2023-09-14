@@ -1,6 +1,8 @@
 import { useIntersection } from "@/hooks/useIntersection";
 import styles from "@/styles/skills.module.scss";
 import { Montserrat } from "next/font/google";
+import { SKILLS } from "./data";
+import SkillCard from "./SkillCard";
 const monrserrat = Montserrat({
   subsets: ["latin"],
   weight: ["900"],
@@ -44,6 +46,11 @@ const Skills = () => {
                 {letter}
               </span>
             );
+          })}
+        </div>
+        <div className={styles["skills-content"]}>
+          {SKILLS.map((skill) => {
+            return <SkillCard info={skill} />;
           })}
         </div>
       </div>

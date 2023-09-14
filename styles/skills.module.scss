@@ -7,6 +7,8 @@
   padding: 2rem;
   background-color: $primary_background_color;
   .skills-header {
+    text-align: right;
+
     font-size: 4rem;
     text-transform: capitalize;
     letter-spacing: 0.2rem;
@@ -41,5 +43,11 @@
     .l-14 {
       animation-delay: 200ms, 2200ms;
     }
+  }
+  .skills-content {
+    width: 100%;
+    // height: 100%;
+    // border: 1px solid $primary_border_color;
+    position: relative;
   }
 }
