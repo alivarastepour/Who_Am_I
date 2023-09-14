@@ -1,9 +1,28 @@
+const getDuration = (date: string) => {
+  const [start, end] = date.replaceAll(" ", "").split("-");
+
+  const durationRange = new Date(
+    // @ts-ignore
+    (end === "present" ? new Date() : new Date(end)) - new Date(start)
+  );
+
+  const month = durationRange.getMonth();
+  const year = durationRange.getFullYear() - 1970;
+  const duration = `${
+    year > 0
+      ? `${year} year${year > 1 ? "s" : ""} ${month > 0 ? "and" : ""}`
+      : ""
+  }${month > 0 ? `${month} month${month > 1 ? "s" : ""}` : ""}`;
+  return duration;
+};
+
 export const EXPERIENCE_DATA = [
   {
     id: 0,
     duration: {
       georgian: "june 2023 - present",
       jalali: "tir 1402 - present",
+      length: "",
     },
     company: {
       name: "Parsimap",
@@ -32,8 +51,9 @@ export const EXPERIENCE_DATA = [
   {
     id: 3,
     duration: {
-      georgian: "octobor 2022 - may 2023",
+      georgian: "september 2022 - june 2023",
       jalali: "mehr 1401 - khordad 1402",
+      length: "",
     },
     company: {
       name: "Teaching assistant",
@@ -55,6 +75,7 @@ export const EXPERIENCE_DATA = [
     duration: {
       georgian: "september 2022 - present",
       jalali: "shahrivar 1401 - present",
+      length: "",
     },
     company: {
       name: "Freelancing",
@@ -74,8 +95,9 @@ export const EXPERIENCE_DATA = [
   {
     id: 2,
     duration: {
-      georgian: "june 2022 - may 2023",
+      georgian: "june 2022 - june 2023",
       jalali: "tir 1401 - khordad 1402",
+      length: "",
     },
     company: {
       name: "Maktabkhooneh",
@@ -92,4 +114,7 @@ export const EXPERIENCE_DATA = [
       "In my role as a mentor in Advanced ReactJS course, my responsibilities included assessing students' submissions. These submissions encompassed a variety of ReactJS projects with distinct focuses. Additionally, I provided guidance by addressing their questions related to ReactJS and its ecosystem.",
     techStack: ["ReactJS"],
   },
-];
+].map((item) => ({
+  ...item,
+  duration: { ...item.duration, length: getDuration(item.duration.georgian) },
+}));

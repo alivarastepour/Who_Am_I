@@ -2,6 +2,7 @@ import styles from "@/styles/experienceCard.module.scss";
 import { EXPERIENCE_DATA } from "./data";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
+import { log } from "console";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "800"],
@@ -12,10 +13,11 @@ const ExperienceCard = ({ info }: { info: (typeof EXPERIENCE_DATA)[0] }) => {
     company: { industry, homepage, logo, name, about },
     location: { region, type },
     description,
-    duration: { georgian, jalali },
+    duration: { georgian, jalali, length },
     id,
     techStack,
   } = info;
+
   return (
     <>
       <div
@@ -54,7 +56,10 @@ const ExperienceCard = ({ info }: { info: (typeof EXPERIENCE_DATA)[0] }) => {
               </div>
             )}
             <div className={styles["duration-info"]}>
-              <div className={styles["duration-jalali-info"]}>{jalali}</div>
+              <div className={styles["duration-jalali-info"]}>
+                <span>{jalali}</span>
+                <span className={styles["duration-length"]}>({length})</span>
+              </div>
               <div className={styles["duration-georgian-info"]}>{georgian}</div>
             </div>
           </div>

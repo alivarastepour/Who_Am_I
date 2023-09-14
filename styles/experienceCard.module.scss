@@ -86,6 +86,12 @@
         .duration-jalali-info {
           font-size: 1.2rem;
           font-weight: 600;
+          .duration-length {
+            font-size: 0.75rem;
+            margin-left: 0.5rem;
+            opacity: 0.7;
+            font-weight: 200;
+          }
         }
         .duration-georgian-info {
           font-size: 0.9rem;
@@ -152,7 +158,8 @@
 @media only screen and (max-width: 600px) {
   .experience-card-wrapper {
     flex-direction: column;
+    &:hover {
+      box-shadow: none;
+    }
   }
 }
-
-
