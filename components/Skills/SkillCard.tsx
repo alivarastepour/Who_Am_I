@@ -7,8 +7,10 @@ const montserrat = Montserrat({
 });
 const SkillCard = ({ info }: { info: (typeof SKILLS)[0] }) => {
   const { members, topic } = info;
+  const identifier = `${topic.replaceAll(" ", "").toLowerCase()}-wrapper`;
+
   return (
-    <div className={styles["skill-card-wrapper"]}>
+    <div className={`${styles[identifier]} ${styles["skill-card-wrapper"]}`}>
       <div className={`${styles["skill-card-topic"]} ${montserrat.className}`}>
         {topic}
       </div>

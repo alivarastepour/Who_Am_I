@@ -15,42 +15,44 @@ const Skills = () => {
   return (
     <>
       <div className={styles["skills-wrapper"]}>
+        <div className={styles["skills-background-wrapper"]}></div>
         <div
           id="skills-header"
           className={`${monrserrat.className} ${styles["skills-header"]}`}
         >
-          {[
-            "t",
-            "e",
-            "c",
-            "h",
-            "n",
-            "i",
-            "c",
-            "a",
-            "l",
-            " ",
-            "s",
-            "k",
-            "i",
-            "l",
-            "l",
-            "s",
-          ].map((letter, index) => {
-            const indicator = `${letter}-${index}`;
-            return (
-              <span
-                key={indicator}
-                className={`${styles[indicator]} ${letter}`}
-              >
-                {letter}
-              </span>
-            );
-          })}
+          <div className={styles["header-first"]}>
+            {["t", "e", "c", "h", "n", "i", "c", "a", "l"].map(
+              (letter, index) => {
+                const indicator = `${letter}-${index}`;
+                return (
+                  <span
+                    key={indicator}
+                    className={`${styles[indicator]} ${letter}`}
+                  >
+                    {letter}
+                  </span>
+                );
+              }
+            )}
+          </div>
+
+          <div className={styles["header-second"]}>
+            {["s", "k", "i", "l", "l", "s"].map((letter, index) => {
+              const indicator = `${letter}-${index}`;
+              return (
+                <span
+                  key={indicator}
+                  className={`${styles[indicator]} ${letter}`}
+                >
+                  {letter}
+                </span>
+              );
+            })}
+          </div>
         </div>
         <div className={styles["skills-content"]}>
           {SKILLS.map((skill) => {
-            return <SkillCard info={skill} />;
+            return <SkillCard key={skill.topic} info={skill} />;
           })}
         </div>
       </div>
