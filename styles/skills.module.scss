@@ -1,1 +1,45 @@
+@use "./mixins.scss" as *;
+
 @import "./variables.scss";
+
+.skills-wrapper {
+  height: calc(100vh - 100px);
+  padding: 2rem;
+  background-color: $primary_background_color;
+  .skills-header {
+    font-size: 4rem;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    color: $primary_text_color;
+
+    span {
+      display: inline-block;
+      position: inherit;
+    }
+    .s-10 {
+      margin-left: 1.2rem;
+    }
+    .l-8,
+    .l-13,
+    .l-14 {
+      @include init_lamp_animation;
+    }
+  }
+
+  .lamp-effect {
+    .l-8,
+    .l-13,
+    .l-14 {
+      @include trigger_lamp_animation;
+    }
+    .l-8 {
+      animation-delay: 300ms, 2300ms;
+    }
+    .l-13 {
+      animation-delay: 600ms, 2600ms;
+    }
+    .l-14 {
+      animation-delay: 200ms, 2200ms;
+    }
+  }
+}

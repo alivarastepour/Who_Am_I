@@ -1,4 +1,6 @@
+@use "./mixins.scss" as *;
 @import "./variables.scss";
+
 .experience-wrapper {
   min-height: calc(100vh - 100px);
   background: $primary_background_color;
@@ -20,9 +22,7 @@
     }
 
     .e {
-      color: transparent;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: transparent;
+      @include init_lamp_animation;
     }
   }
 
@@ -30,7 +30,7 @@
     .e-0,
     .e-6,
     .e-9 {
-      animation: e-lamp-blink 2s forwards, e-lamp-on 1s forwards 2s;
+      @include trigger_lamp_animation;
     }
 
     .e-9 {
@@ -38,8 +38,7 @@
     }
 
     .e-3 {
-      animation: e-lamp-blink 2s forwards, e-lamp-on 1s forwards 2s,
-        e-lamp-explode 2s forwards;
+      @include trigger_lamp_animation_with_explosion;
       animation-delay: 200ms, 2200ms, 5500ms;
     }
 
@@ -86,86 +85,5 @@
 @media only screen and (max-width: 450px) {
   .experience-wrapper {
     padding: 0.5rem;
-  }
-}
-
-@keyframes e-lamp-blink {
-  from {
-    -webkit-text-stroke-color: transparent;
-  }
-  40% {
-    -webkit-text-stroke-color: $primary_text_color;
-  }
-  70% {
-    -webkit-text-stroke-color: transparent;
-  }
-  75% {
-    -webkit-text-stroke-color: $primary_text_color;
-  }
-  80% {
-    -webkit-text-stroke-color: transparent;
-  }
-  85% {
-    -webkit-text-stroke-color: $primary_text_color;
-  }
-  90% {
-    -webkit-text-stroke-color: transparent;
-  }
-  95% {
-    -webkit-text-stroke-color: $primary_text_color;
-  }
-  to {
-    -webkit-text-stroke-color: transparent;
-  }
-}
-
-@keyframes e-lamp-on {
-  from {
-    color: transparent;
-  }
-  to {
-    color: $primary_text_color;
-    -webkit-text-stroke-color: transparent;
-  }
-}
-
-@keyframes e-lamp-explode {
-  from {
-    color: $primary_text_color;
-    -webkit-text-stroke-color: transparent;
-  }
-  10% {
-    color: transparent;
-    -webkit-text-stroke-color: $primary_text_color;
-  }
-  15% {
-    -webkit-text-stroke-color: transparent;
-  }
-  20% {
-    -webkit-text-stroke-color: $primary_text_color;
-  }
-  25% {
-    -webkit-text-stroke-color: transparent;
-  }
-  30% {
-    -webkit-text-stroke-color: $primary_text_color;
-  }
-  35% {
-    -webkit-text-stroke-color: transparent;
-  }
-  40% {
-    -webkit-text-stroke-color: $primary_text_color;
-  }
-  45% {
-    -webkit-text-stroke-color: transparent;
-  }
-  50% {
-    -webkit-text-stroke-color: $primary_text_color;
-    transform: unset;
-  }
-  to {
-    -webkit-text-stroke-color: $secondary_border_color;
-    position: inherit;
-    color: transparent;
   }
 }
