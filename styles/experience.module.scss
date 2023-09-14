@@ -1,11 +1,11 @@
 @import "./variables.scss";
 .experience-wrapper {
   min-height: calc(100vh - 100px);
-  background: #111;
+  background: $primary_background_color;
   padding: 2rem;
 
   .exprerience-header {
-    color: #fff;
+    color: $primary_text_color;
     font-size: 4rem;
     text-transform: capitalize;
     margin: 3rem auto 1rem 1rem;
@@ -54,87 +54,6 @@
   }
 }
 
-@keyframes e-lamp-blink {
-  from {
-    -webkit-text-stroke-color: transparent;
-  }
-  40% {
-    -webkit-text-stroke-color: #fff;
-  }
-  70% {
-    -webkit-text-stroke-color: transparent;
-  }
-  75% {
-    -webkit-text-stroke-color: #fff;
-  }
-  80% {
-    -webkit-text-stroke-color: transparent;
-  }
-  85% {
-    -webkit-text-stroke-color: #fff;
-  }
-  90% {
-    -webkit-text-stroke-color: transparent;
-  }
-  95% {
-    -webkit-text-stroke-color: #fff;
-  }
-  to {
-    -webkit-text-stroke-color: transparent;
-  }
-}
-
-@keyframes e-lamp-on {
-  from {
-    color: transparent;
-  }
-  to {
-    color: #fff;
-    -webkit-text-stroke-color: transparent;
-  }
-}
-
-@keyframes e-lamp-explode {
-  from {
-    color: #fff;
-    -webkit-text-stroke-color: transparent;
-  }
-  10% {
-    color: transparent;
-    -webkit-text-stroke-color: #fff;
-  }
-  15% {
-    -webkit-text-stroke-color: transparent;
-  }
-  20% {
-    -webkit-text-stroke-color: #fff;
-  }
-  25% {
-    -webkit-text-stroke-color: transparent;
-  }
-  30% {
-    -webkit-text-stroke-color: #fff;
-  }
-  35% {
-    -webkit-text-stroke-color: transparent;
-  }
-  40% {
-    -webkit-text-stroke-color: #fff;
-  }
-  45% {
-    -webkit-text-stroke-color: transparent;
-  }
-  50% {
-    -webkit-text-stroke-color: #fff;
-    transform: unset;
-  }
-  to {
-    -webkit-text-stroke-color: #444;
-    position: inherit;
-    color: transparent;
-  }
-}
-
 @media only screen and (max-width: 850px) {
   .experience-wrapper {
     flex-direction: column;
@@ -167,5 +86,86 @@
 @media only screen and (max-width: 450px) {
   .experience-wrapper {
     padding: 0.5rem;
+  }
+}
+
+@keyframes e-lamp-blink {
+  from {
+    -webkit-text-stroke-color: transparent;
+  }
+  40% {
+    -webkit-text-stroke-color: $primary_text_color;
+  }
+  70% {
+    -webkit-text-stroke-color: transparent;
+  }
+  75% {
+    -webkit-text-stroke-color: $primary_text_color;
+  }
+  80% {
+    -webkit-text-stroke-color: transparent;
+  }
+  85% {
+    -webkit-text-stroke-color: $primary_text_color;
+  }
+  90% {
+    -webkit-text-stroke-color: transparent;
+  }
+  95% {
+    -webkit-text-stroke-color: $primary_text_color;
+  }
+  to {
+    -webkit-text-stroke-color: transparent;
+  }
+}
+
+@keyframes e-lamp-on {
+  from {
+    color: transparent;
+  }
+  to {
+    color: $primary_text_color;
+    -webkit-text-stroke-color: transparent;
+  }
+}
+
+@keyframes e-lamp-explode {
+  from {
+    color: $primary_text_color;
+    -webkit-text-stroke-color: transparent;
+  }
+  10% {
+    color: transparent;
+    -webkit-text-stroke-color: $primary_text_color;
+  }
+  15% {
+    -webkit-text-stroke-color: transparent;
+  }
+  20% {
+    -webkit-text-stroke-color: $primary_text_color;
+  }
+  25% {
+    -webkit-text-stroke-color: transparent;
+  }
+  30% {
+    -webkit-text-stroke-color: $primary_text_color;
+  }
+  35% {
+    -webkit-text-stroke-color: transparent;
+  }
+  40% {
+    -webkit-text-stroke-color: $primary_text_color;
+  }
+  45% {
+    -webkit-text-stroke-color: transparent;
+  }
+  50% {
+    -webkit-text-stroke-color: $primary_text_color;
+    transform: unset;
+  }
+  to {
+    -webkit-text-stroke-color: $secondary_border_color;
+    position: inherit;
+    color: transparent;
   }
 }
