@@ -1,9 +1,13 @@
 import styles from "@/styles/skillCard.module.scss";
 import { SKILLS } from "./data";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300"],
+});
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 const SkillCard = ({ info }: { info: (typeof SKILLS)[0] }) => {
   const { members, topic } = info;
@@ -17,7 +21,10 @@ const SkillCard = ({ info }: { info: (typeof SKILLS)[0] }) => {
       <div className={styles["skill-card-members-wrapper"]}>
         {members.map((member) => {
           return (
-            <span className={styles["skill-card-member"]} key={member}>
+            <span
+              className={`${inter.className} ${styles["skill-card-member"]}`}
+              key={member}
+            >
               {member}
             </span>
           );

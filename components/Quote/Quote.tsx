@@ -1,9 +1,14 @@
 import styles from "@/styles/quote.module.scss";
-
+import { Inter } from "next/font/google";
+const inter = Inter({
+  subsets: ["latin"],
+});
 const Quote = () => {
   return (
     <>
-      <div className={styles["quote-background-wrapper"]}>
+      <div
+        className={`${inter.className} ${styles["quote-background-wrapper"]}`}
+      >
         <div className={styles["quote-background"]}></div>
         <div className={styles["quote-wrapper"]}>
           <div className={styles["quote"]}>

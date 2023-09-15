@@ -1,15 +1,15 @@
 import styles from "@/styles/header.module.scss";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
-// const inter = Inter({
-//   subsets: ["latin"],
-// });
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 const Header = () => {
   return (
     <>
-      <div className={`${styles["header-wrapper"]}`}>
+      <div className={`${styles["header-wrapper"]} ${inter.className}`}>
         <div className={styles["logo-wrapper"]}>
           <div className={styles["logo-image-wrapper"]}>
             <div className={styles["logo-image"]}>
