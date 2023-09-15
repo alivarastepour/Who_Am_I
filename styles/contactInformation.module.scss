@@ -1,5 +1,60 @@
+@use "./mixins.scss" as *;
 @import "./variables.scss";
 
 .contact-information-wrapper {
   min-height: calc(100vh - 100px);
+  background-color: #111;
+  padding: 2rem;
+  position: relative;
+
+  .contact-information-header {
+    position: relative;
+
+    font-size: 4rem;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    color: $primary_text_color;
+
+    .header-first,
+    .header-second {
+      display: inline-block;
+    }
+
+    .header-second {
+      margin-left: 1.5rem;
+    }
+
+    span {
+      display: inline-block;
+      position: inherit;
+    }
+
+    .n-2,
+    .n-1,
+    .n-10 {
+      @include init_lamp_animation;
+    }
+  }
+  .lamp-effect {
+    .n-2,
+    .n-1 {
+      @include trigger_lamp_animation;
+    }
+
+    .n-10 {
+      @include trigger_lamp_animation_with_explosion;
+    }
+
+    .n-2 {
+      animation-delay: 200ms, 2200ms;
+    }
+
+    .n-1 {
+      animation-delay: 500ms, 2500ms;
+    }
+
+    .n-10 {
+      animation-delay: 1000ms, 3000ms, 6300ms;
+    }
+  }
 }
