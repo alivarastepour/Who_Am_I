@@ -1,6 +1,8 @@
 import { useIntersection } from "@/hooks/useIntersection";
 import styles from "@/styles/contactInformation.module.scss";
 import { Montserrat } from "next/font/google";
+import { CONTACT_INFORMATION } from "./data";
+import ContactInformationCard from "./ContactInformationCard";
 const monrserrat = Montserrat({
   subsets: ["latin"],
   weight: ["900"],
@@ -50,7 +52,9 @@ const ContactInformation = () => {
           </div>
         </div>
         <div className={styles["contact-information-content"]}>
-            
+          {CONTACT_INFORMATION.map((item, index) => {
+            return <ContactInformationCard info={item} key={index} />;
+          })}
         </div>
       </div>
     </>
