@@ -1,1 +1,78 @@
 @import "./variables.scss";
+
+.contact-information-card-wrapper {
+  color: $primary_text_color;
+  padding: 2rem;
+
+  .contact-information-card-header {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .contact-information-card-members {
+    .contact-information-member-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 1rem;
+      overflow: hidden;
+
+      .contact-information-logo-wrapper {
+        img {
+          transition: 0.4s all ease;
+          object-fit: contain;
+        }
+        .phonenumber {
+          filter: invert(1);
+        }
+      }
+      .contact-information-info-wrapper {
+        transition: 0.4s all ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .contact-information-platform {
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        .contact-information-info {
+          font-weight: 300;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .copy-button {
+            visibility: hidden;
+            filter: invert(1);
+            cursor: pointer;
+          }
+        }
+      }
+
+      &:hover {
+        .contact-information-logo-wrapper {
+          img {
+            transform: scale(1.5);
+            opacity: 0.4;
+          }
+        }
+        .contact-information-info-wrapper {
+          transform: translateX(-1rem);
+          .contact-information-info {
+            .copy-button {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}

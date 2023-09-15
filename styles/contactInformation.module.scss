@@ -6,9 +6,11 @@
   background-color: #111;
   padding: 2rem;
   position: relative;
+  overflow: hidden;
 
   .contact-information-header {
     position: relative;
+    z-index: 3;
 
     font-size: 4rem;
     text-transform: capitalize;
@@ -56,5 +58,16 @@
     .n-10 {
       animation-delay: 1000ms, 3000ms, 6300ms;
     }
+  }
+
+  .contact-information-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    border-radius: 0.5em;
+    position: relative;
+    z-index: 0;
   }
 }
