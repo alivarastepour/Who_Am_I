@@ -68,22 +68,48 @@
       &:hover {
         border-radius: 0.5rem;
         &.phonenumber-wrapper {
-          background-color: #222;
+          // background-color: #222;
+          background-image: linear-gradient(to left, #222, transparent);
         }
         &.email-wrapper {
           background-color: rgba(#34a853, 0.2);
+          background-image: linear-gradient(
+            to left,
+            rgba(#34a853, 0.2),
+            transparent
+          );
         }
         &.telegram-wrapper {
-          background-color: rgba(#0088cc, 0.2);
+          // background-color: rgba(#0088cc, 0.2);
+          background-image: linear-gradient(
+            to left,
+            rgba(#0088cc, 0.2),
+            transparent
+          );
         }
         &.linkedin-wrapper {
-          background-color: rgba(#0075b5, 0.2);
+          // background-color: rgba(#0075b5, 0.2);
+          background-image: linear-gradient(
+            to left,
+            rgba(#0075b5, 0.2),
+            transparent
+          );
         }
         &.github-wrapper {
-          background-color: rgba(#fff, 0.1);
+          // background-color: rgba(#fff, 0.1);
+          background-image: linear-gradient(
+            to left,
+            rgba(#fff, 0.1),
+            transparent
+          );
         }
         &.stackoverflow-wrapper {
-          background-color: rgba(#f47f24, 0.2);
+          // background-color: rgba(#f47f24, 0.2);
+          background-image: linear-gradient(
+            to left,
+            rgba(#f47f24, 0.2),
+            transparent
+          );
         }
         .contact-information-logo-wrapper {
           img {
