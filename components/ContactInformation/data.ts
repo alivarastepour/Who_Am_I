@@ -33,7 +33,7 @@ export const CONTACT_INFORMATION = [
     action: CONTACT_INFORMATION_ACTION.copy,
     members: [
       {
-        id: 4,
+        id: 5,
         platform: "telegram",
         info: "@Swishswishmdfk",
         logo: "/telegram-logo.png",

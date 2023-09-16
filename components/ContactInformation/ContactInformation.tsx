@@ -3,15 +3,17 @@ import styles from "@/styles/contactInformation.module.scss";
 import { Montserrat, Raleway } from "next/font/google";
 import { CONTACT_INFORMATION } from "./data";
 import ContactInformationCard from "./ContactInformationCard";
-import Image from "next/image";
+
 const monrserrat = Montserrat({
   subsets: ["latin"],
   weight: ["900"],
 });
+
 const raleway = Raleway({
   subsets: ["latin"],
   weight: ["100"],
 });
+
 const ContactInformation = () => {
   useIntersection({
     observables: [
@@ -19,6 +21,7 @@ const ContactInformation = () => {
     ],
     parentId: "contact-information-header",
   });
+
   return (
     <>
       <div className={styles["contact-information-wrapper"]}>
@@ -64,8 +67,8 @@ const ContactInformation = () => {
           <div
             className={`${raleway.className} ${styles["contact-information-text"]}`}
           >
-            Give me a star, like a post or let's talk about your project; Each
-            is fine.
+            Give me a star, like a post or let&apos;s talk about your project;
+            Each is fine.
           </div>
         </div>
       </div>
