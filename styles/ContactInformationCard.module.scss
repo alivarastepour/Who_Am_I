@@ -2,7 +2,6 @@
 
 .contact-information-card-wrapper {
   color: $primary_text_color;
-  // padding: 2rem;
   margin-top: 2rem;
 
   .contact-information-card-header {
@@ -24,7 +23,7 @@
       margin-bottom: 1rem;
       overflow: hidden;
       position: relative;
-      width: 450px;
+      // width: 450px;
 
       .contact-information-logo-wrapper {
         position: relative;
@@ -39,6 +38,7 @@
           filter: invert(1);
         }
       }
+
       .contact-information-info-wrapper {
         transition: 0.4s all ease;
         display: flex;

@@ -3,6 +3,7 @@ import { CONTACT_INFORMATION, CONTACT_INFORMATION_ACTION } from "./data";
 import styles from "@/styles/ContactInformationCard.module.scss";
 import { Montserrat } from "next/font/google";
 import { useState } from "react";
+import { useIntersection } from "@/hooks/useIntersection";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "500", "700"],
@@ -17,6 +18,7 @@ const ContactInformationCard = ({
   const showInfo = action === CONTACT_INFORMATION_ACTION.copy;
 
   const [copyVisible, setCopyVisible] = useState(true);
+
   return (
     <>
       <div
