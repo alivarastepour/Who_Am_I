@@ -75,7 +75,8 @@ const AllInOne = () => {
               love open-source contribution although nowadays i don&apos;t get
               to do that a lot. As helping people is always a pleasure for me, i
               was a Teaching assistant for a couple of times in SBU and a course
-              mentor in an e-learning platform. <a href="#">Read more</a>.
+              mentor in an e-learning platform.{" "}
+              <a href="#exprerience-header">Read more</a>.
             </div>
           </div>
           <div
@@ -115,7 +116,7 @@ const AllInOne = () => {
               much easier, putting them into proper use requires a solid
               knowledge of basic concepts. So, I don&apos;t limit myself to any
               specific tool, which makes me open to new technologies.
-              <a href="#">Read more</a>.
+              <a href="#skills-header">Read more</a>.
             </div>
           </div>
           <div
