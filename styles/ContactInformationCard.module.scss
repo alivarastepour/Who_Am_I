@@ -23,13 +23,78 @@
       margin-bottom: 1rem;
       overflow: hidden;
       position: relative;
-      // width: 450px;
+
+      &:hover {
+        border-radius: 0.5rem;
+
+        &.phonenumber-wrapper {
+          background-image: linear-gradient(to left, #222, transparent);
+        }
+
+        &.email-wrapper {
+          background-color: rgba(#34a853, 0.2);
+          background-image: linear-gradient(
+            to left,
+            rgba(#34a853, 0.2),
+            transparent
+          );
+        }
+
+        &.telegram-wrapper {
+          background-image: linear-gradient(
+            to left,
+            rgba(#0088cc, 0.2),
+            transparent
+          );
+        }
+
+        &.linkedin-wrapper {
+          background-image: linear-gradient(
+            to left,
+            rgba(#0075b5, 0.2),
+            transparent
+          );
+        }
+
+        &.github-wrapper {
+          background-image: linear-gradient(
+            to left,
+            rgba(#fff, 0.1),
+            transparent
+          );
+        }
+
+        &.stackoverflow-wrapper {
+          background-image: linear-gradient(
+            to left,
+            rgba(#f47f24, 0.2),
+            transparent
+          );
+        }
+
+        .contact-information-logo-wrapper {
+          img {
+            transform: scale(1.5);
+            opacity: 0.4;
+          }
+        }
+
+        .contact-information-info-wrapper {
+          transform: translateX(-1rem);
+          .contact-information-info {
+            .copy-button {
+              visibility: visible;
+            }
+          }
+        }
+      }
 
       .contact-information-logo-wrapper {
         position: relative;
         width: 100px;
         height: 100px;
         display: block;
+
         img {
           transition: 0.4s all ease;
           object-fit: contain;
@@ -61,68 +126,6 @@
             visibility: hidden;
             filter: invert(1);
             cursor: pointer;
-          }
-        }
-      }
-
-      &:hover {
-        border-radius: 0.5rem;
-        &.phonenumber-wrapper {
-          // background-color: #222;
-          background-image: linear-gradient(to left, #222, transparent);
-        }
-        &.email-wrapper {
-          background-color: rgba(#34a853, 0.2);
-          background-image: linear-gradient(
-            to left,
-            rgba(#34a853, 0.2),
-            transparent
-          );
-        }
-        &.telegram-wrapper {
-          // background-color: rgba(#0088cc, 0.2);
-          background-image: linear-gradient(
-            to left,
-            rgba(#0088cc, 0.2),
-            transparent
-          );
-        }
-        &.linkedin-wrapper {
-          // background-color: rgba(#0075b5, 0.2);
-          background-image: linear-gradient(
-            to left,
-            rgba(#0075b5, 0.2),
-            transparent
-          );
-        }
-        &.github-wrapper {
-          // background-color: rgba(#fff, 0.1);
-          background-image: linear-gradient(
-            to left,
-            rgba(#fff, 0.1),
-            transparent
-          );
-        }
-        &.stackoverflow-wrapper {
-          // background-color: rgba(#f47f24, 0.2);
-          background-image: linear-gradient(
-            to left,
-            rgba(#f47f24, 0.2),
-            transparent
-          );
-        }
-        .contact-information-logo-wrapper {
-          img {
-            transform: scale(1.5);
-            opacity: 0.4;
-          }
-        }
-        .contact-information-info-wrapper {
-          transform: translateX(-1rem);
-          .contact-information-info {
-            .copy-button {
-              visibility: visible;
-            }
           }
         }
       }
@@ -187,7 +190,6 @@
       .contact-information-member-wrapper {
         width: calc(100vw - 4rem);
         gap: 5rem;
-        // justify-content: space-between;
         .contact-information-logo-wrapper {
           width: 100px;
           height: 100px;

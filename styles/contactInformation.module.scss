@@ -11,7 +11,6 @@
   .contact-information-header {
     position: relative;
     z-index: 3;
-
     font-size: 4rem;
     text-transform: capitalize;
     letter-spacing: 0.2rem;
@@ -37,6 +36,7 @@
       @include init_lamp_animation;
     }
   }
+
   .lamp-effect {
     .n-2,
     .n-1 {
@@ -72,13 +72,14 @@
     z-index: 0;
 
     .contact-information-text {
-      color: #fff;
+      color: $primary_text_color;
       font-size: 3rem;
       flex: 0 0 25%;
       margin-left: 10rem;
     }
   }
 }
+
 @media only screen and (max-width: 1300px) {
   .contact-information-wrapper {
     .contact-information-content {
@@ -90,19 +91,15 @@
     }
   }
 }
+
 @media only screen and (max-width: 1080px) {
   .contact-information-text {
     display: none;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .contact-information-wrapper {
-    min-height: calc(100vh - 100px);
-    background-color: #111;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-
     .contact-information-header {
       .header-first,
       .header-second {
