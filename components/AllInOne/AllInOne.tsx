@@ -70,8 +70,8 @@ const AllInOne = () => {
               >
                 {companyName}
               </a>
-              . In addition to that, I&apos;ve always kept an open eye on
-              freelancing positions and have taken on a few projects. I also
+              . Alongside my full-time role, I&apos;ve always kept an open eye
+              on freelancing positions and have taken on a few projects. I also
               love open-source contribution although nowadays i don&apos;t get
               to do that a lot. As helping people is always a pleasure for me, i
               was a Teaching assistant for a couple of times in SBU and a course
@@ -91,9 +91,12 @@ const AllInOne = () => {
           <div className={styles["info-wrapper"]}>
             <div className={`${styles["title"]} title`}>Soft Skills</div>
             <div className={`${styles["description"]} description`}>
-              it is one thing to read about someone, another thing to actually
-              know someone; so ask around, or let&apos;s hope we&apos;ll meet
-              someday.
+              With a commitment to consistency and a genuine passion for
+              development, I find immense satisfaction in sharing my knowledge
+              and helping fellow developers thrive. My caring nature extends to
+              our project outputs, where I consistently strive for excellence.
+              Whether through mentorship or personal dedication, I aim to
+              contribute positively to our team and the success of our projects.
             </div>
           </div>
           <div
