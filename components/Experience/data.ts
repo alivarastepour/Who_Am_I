@@ -89,7 +89,7 @@ export const EXPERIENCE_DATA = [
       type: undefined,
     },
     description:
-      "I've had the opportunity to engage in several freelancing projects, each offering unique challenges. One such project involved enhancing a dashboard by implementing OAuth functionality and integrating a dark mode feature. In addition, I contributed to refining the user interface and client-side logic of a Converter library, exclusively using Vanilla JavaScript. You can find the source code for both of these projects in the 'Projects' section.",
+      "I've had the opportunity to engage in several freelancing projects, each offering unique challenges. One such project involved enhancing a dashboard by implementing OAuth functionality and integrating a dark mode feature. In addition, I contributed to refining the user interface and client-side logic of a Converter library, exclusively using Vanilla JavaScript.",
     techStack: ["NextJS", "Javascript"],
   },
   {
