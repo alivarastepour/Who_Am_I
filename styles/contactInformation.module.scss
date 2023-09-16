@@ -65,9 +65,75 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5rem;
+    gap: 1rem;
     border-radius: 0.5em;
     position: relative;
     z-index: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-information-wrapper {
+    min-height: calc(100vh - 100px);
+    background-color: #111;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    .contact-information-header {
+      .header-first,
+      .header-second {
+        display: block;
+      }
+      .header-second {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-information-wrapper {
+    .contact-information-content {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .contact-information-wrapper {
+    .contact-information-header {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .contact-information-wrapper {
+    .contact-information-header {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-information-wrapper {
+    .contact-information-header {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-information-wrapper {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .contact-information-wrapper {
+    .contact-information-header {
+      font-size: 2.2rem;
+    }
   }
 }

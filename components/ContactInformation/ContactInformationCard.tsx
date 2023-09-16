@@ -26,18 +26,21 @@ const ContactInformationCard = ({
         }}
         className={`${montserrat.className} ${styles["contact-information-card-wrapper"]}`}
       >
-        <div className={styles["contact-information-card-header"]}>
+        {/* <div className={styles["contact-information-card-header"]}>
           {category}
-        </div>
+        </div> */}
         <div className={styles["contact-information-card-members"]}>
           {members.map(({ id, info, logo, platform }) => {
+            const shorthandPlatform = platform.replaceAll(" ", "");
             return (
               <div
                 style={{
                   cursor: showInfo ? "default" : "pointer",
                 }}
                 key={id}
-                className={styles["contact-information-member-wrapper"]}
+                className={`${styles[`${shorthandPlatform}-wrapper`]} ${
+                  styles["contact-information-member-wrapper"]
+                }`}
                 onClick={() => {
                   if (typeof window === "undefined" || showInfo) return;
                   window.open(info, "_blank");
@@ -45,11 +48,11 @@ const ContactInformationCard = ({
               >
                 <div className={styles["contact-information-logo-wrapper"]}>
                   <Image
-                    className={styles[platform.replaceAll(" ", "")]}
+                    className={styles[shorthandPlatform]}
                     alt={`logo of ${platform}`}
                     src={logo}
-                    width={100}
-                    height={100}
+                    layout="fill"
+                    quality={100}
                   />
                 </div>
                 <div className={styles["contact-information-info-wrapper"]}>

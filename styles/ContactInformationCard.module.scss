@@ -2,13 +2,15 @@
 
 .contact-information-card-wrapper {
   color: $primary_text_color;
-  padding: 2rem;
+  // padding: 2rem;
+  margin-top: 2rem;
 
   .contact-information-card-header {
     font-size: 2rem;
     text-transform: capitalize;
     font-weight: 700;
     margin-bottom: 2rem;
+    display: none;
   }
 
   .contact-information-card-members {
@@ -21,8 +23,14 @@
       align-items: center;
       margin-bottom: 1rem;
       overflow: hidden;
+      position: relative;
+      width: 450px;
 
       .contact-information-logo-wrapper {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: block;
         img {
           transition: 0.4s all ease;
           object-fit: contain;
@@ -58,6 +66,25 @@
       }
 
       &:hover {
+        border-radius: 0.5rem;
+        &.phonenumber-wrapper {
+          background-color: #222;
+        }
+        &.email-wrapper {
+          background-color: rgba(#34a853, 0.2);
+        }
+        &.telegram-wrapper {
+          background-color: rgba(#0088cc, 0.2);
+        }
+        &.linkedin-wrapper {
+          background-color: rgba(#0075b5, 0.2);
+        }
+        &.github-wrapper {
+          background-color: rgba(#fff, 0.1);
+        }
+        &.stackoverflow-wrapper {
+          background-color: rgba(#f47f24, 0.2);
+        }
         .contact-information-logo-wrapper {
           img {
             transform: scale(1.5);
@@ -71,6 +98,98 @@
               visibility: visible;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-information-card-wrapper {
+    .contact-information-card-members {
+      .contact-information-member-wrapper {
+        gap: 0.75rem;
+        width: 400px;
+        padding: 1rem 0;
+        .contact-information-logo-wrapper {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-information-card-wrapper {
+    .contact-information-card-members {
+      .contact-information-member-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .contact-information-card-wrapper {
+    margin-top: 0.5rem;
+    .contact-information-card-members {
+      .contact-information-member-wrapper {
+        margin-bottom: 2rem;
+
+        gap: 0.5rem;
+        .contact-information-logo-wrapper {
+          width: 50px;
+          height: 50px;
+        }
+        .contact-information-info-wrapper {
+          .contact-information-platform {
+            font-size: 1rem;
+          }
+          .contact-information-info {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .contact-information-card-wrapper {
+    .contact-information-card-members {
+      .contact-information-member-wrapper {
+        width: calc(100vw - 4rem);
+        gap: 5rem;
+        // justify-content: space-between;
+        .contact-information-logo-wrapper {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .contact-information-card-wrapper {
+    .contact-information-card-members {
+      .contact-information-member-wrapper {
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-information-card-wrapper {
+    .contact-information-card-members {
+      .contact-information-member-wrapper {
+        width: calc(100vw - 2rem);
+        gap: 0.5rem;
+        .contact-information-logo-wrapper {
+          width: 65px;
+          height: 65px;
         }
       }
     }
