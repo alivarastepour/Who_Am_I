@@ -93,13 +93,14 @@ body {
       position: absolute;
       transform: translateY(1rem) !important;
       font-size: 0.2rem;
-      padding: 0 3rem;
+      padding: 0 2rem;
       top: 0;
-      font-size: 0.3rem;
+      font-size: 0.25rem;
+      line-height: 0.35rem;
     }
 
     .title {
-      transform: translate(0.25rem, 0rem);
+      transform: translate(-0.6rem, 0.75rem);
       max-width: 200px;
       opacity: 0.5;
     }
@@ -266,12 +267,13 @@ body {
     &:hover {
       transform: translate(-350px, 0) scale(2.5);
       .title {
-        transform: translate(-0.1rem, 1.5rem);
+        transform: translate(-0.9rem, 1.7rem);
       }
     }
     .description {
-      font-size: 0.4rem !important;
-      padding-left: 2.6rem !important;
+      font-size: 0.3rem !important;
+      padding: 0 2.7rem 0 1.7rem !important;
+      line-height: 0.4rem !important;
     }
   }
   .all-in-one-sliding-feature-3 {
@@ -318,7 +320,7 @@ body {
   .all-in-one-sliding-feature-2 {
     &:hover {
       .title {
-        transform: translate(0rem, 1.5rem);
+        transform: translate(-0.8rem, 1.9rem);
       }
     }
   }
