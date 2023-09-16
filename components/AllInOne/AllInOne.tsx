@@ -60,7 +60,7 @@ const AllInOne = () => {
           className={`${styles["feature-container"]} ${styles["feature-container-1"]}`}
         >
           <div className={styles["info-wrapper"]}>
-            <div className={`${styles["title"]} title`}>Exprience</div>
+            <div className={`${styles["title"]} title`}>Experience</div>
             <div className={`${styles["description"]} description`}>
               I&apos;m currently working as a web front-end developer at
               <a

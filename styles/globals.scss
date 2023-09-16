@@ -65,7 +65,7 @@ body {
       position: absolute;
       transform: translateY(1.7rem) !important;
       font-size: 0.2rem;
-      padding: 0 1.4rem 0 1.4rem;
+      padding: 0 1.4rem 0 1.1rem;
       max-width: 80%;
       font-size: 0.25rem;
       line-height: 0.35rem;
@@ -272,7 +272,7 @@ body {
     }
     .description {
       font-size: 0.3rem !important;
-      padding: 0 2.7rem 0 1.7rem !important;
+      padding: 0 2.7rem 0 1.8rem !important;
       line-height: 0.4rem !important;
     }
   }
@@ -312,7 +312,10 @@ body {
   .all-in-one-sliding-feature-1 {
     &:hover {
       .title {
-        transform: translate(-0.1rem, -1.2rem);
+        transform: translate(-0.55rem, -1.7rem);
+      }
+      .description {
+        transform: translate(-0.5rem, 1rem) !important;
       }
     }
   }
