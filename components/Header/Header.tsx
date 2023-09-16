@@ -30,7 +30,7 @@ const Header = () => {
           </div>
         </div>
         <div className={styles["language-toggle-wrapper"]}>
-          <div className={styles["language-toggle"]}>EN</div>
+          {/* <div className={styles["language-toggle"]}>EN</div> */}
         </div>
       </div>
     </>
