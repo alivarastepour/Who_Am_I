@@ -24,7 +24,7 @@ const ExperienceCard = ({ info }: { info: (typeof EXPERIENCE_DATA)[0] }) => {
         className={`${styles["experience-card-wrapper"]} ${montserrat.className}`}
       >
         <div className={styles["exprience-card-logo-wrapper"]}>
-          {!!logo ? (
+          {!!homepage ? (
             <a href={homepage} target="_blank">
               <Image
                 alt={`current logo of ${name} company.`}
