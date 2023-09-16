@@ -68,7 +68,7 @@ const ContactInformation = () => {
             className={`${raleway.className} ${styles["contact-information-text"]}`}
           >
             Give me a star, like a post or let&apos;s talk about your project;
-            Each is fine.
+            your pick.
           </div>
         </div>
       </div>
