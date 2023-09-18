@@ -1,7 +1,8 @@
-import "@/styles/globals.scss";
-import type { AppProps } from "next/app";
-import Head from "next/head";
 import Script from "next/script";
+
+import type { AppProps } from "next/app";
+
+import "@/styles/globals.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,11 +13,11 @@ export default function App({ Component, pageProps }: AppProps) {
       ></Script>
 
       <Script id="data-layer-script" strategy="lazyOnload">
-        {`  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_TAG}');`}
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_TAG}');
+        `}
       </Script>
       <Component {...pageProps} />
     </>

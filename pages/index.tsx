@@ -1,5 +1,6 @@
-import HomePageWrapper from "@/components/HomePageWrapper/HomePageWrapper";
 import Head from "next/head";
+
+import HomePageWrapper from "@/components/HomePageWrapper/HomePageWrapper";
 
 export default function Home() {
   return (

@@ -1,7 +1,11 @@
-import { useIntersection } from "@/hooks/useIntersection";
-import styles from "@/styles/contactInformation.module.scss";
 import { Montserrat, Raleway } from "next/font/google";
+
+import { useIntersection } from "@/hooks/useIntersection";
+
+import styles from "@/styles/contactInformation.module.scss";
+
 import { CONTACT_INFORMATION } from "./data";
+
 import ContactInformationCard from "./ContactInformationCard";
 
 const monrserrat = Montserrat({
