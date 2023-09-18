@@ -1,7 +1,7 @@
 import { useIntersection } from "@/hooks/useIntersection";
 import styles from "@/styles/allInOne.module.scss";
-import { Montserrat as Inter } from "next/font/google";
-const inter = Inter({
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["100", "400", "500", "800"],
 });
@@ -43,7 +43,7 @@ const AllInOne = () => {
     <>
       <div
         id={"all-in-one-wrapper"}
-        className={`${styles["all-in-one-wrapper"]} ${inter.className}`}
+        className={`${styles["all-in-one-wrapper"]} ${montserrat.className}`}
       >
         <div
           id={"all-in-one-background-wrapper"}
@@ -51,7 +51,7 @@ const AllInOne = () => {
         ></div>
         <div
           id={"all-in-one-title"}
-          className={`${styles["all-in-one-title"]} ${inter.className}`}
+          className={`${styles["all-in-one-title"]} ${montserrat.className}`}
         >
           explore different sections for more
         </div>
