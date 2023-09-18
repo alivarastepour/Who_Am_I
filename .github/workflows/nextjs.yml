@@ -4,6 +4,9 @@
 #
 name: Deploy Next.js site to Pages
 
+env:
+  NEXT_PUBLIC_GOOGLE_TAG: G-HV0TVE0Z6T
+  
 on:
   # Runs on pushes targeting the default branch
   push:
