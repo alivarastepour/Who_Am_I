@@ -1,5 +1,4 @@
 import { get } from "@/common/get";
-import { useIntersection } from "@/hooks/useIntersection";
 import styles from "@/styles/whoAmI.module.scss";
 import { Montserrat } from "next/font/google";
 import { useEffect, useState } from "react";

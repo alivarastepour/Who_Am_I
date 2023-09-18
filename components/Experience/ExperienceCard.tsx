@@ -2,7 +2,7 @@ import styles from "@/styles/experienceCard.module.scss";
 import { EXPERIENCE_DATA } from "./data";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
-import { log } from "console";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "800"],

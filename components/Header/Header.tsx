@@ -4,6 +4,7 @@ import Image from "next/image";
 import Logo from "@/public/logo.png";
 const inter = Inter({
   subsets: ["latin"],
+  
 });
 
 const Header = () => {
