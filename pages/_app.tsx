@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG}`}
       ></Script>
 
-      <Script strategy="lazyOnload">
+      <Script id="data-layer-script" strategy="lazyOnload">
         {`  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
