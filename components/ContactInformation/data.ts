@@ -1,12 +1,9 @@
-export const CONTACT_INFORMATION_ACTION = {
-  link: "link",
-  copy: "copy",
-};
+import { IContactInformationDataItem } from "@/interfaces/IContactInformationDataItem";
 
-export const CONTACT_INFORMATION = [
+export const CONTACT_INFORMATION: IContactInformationDataItem[] = [
   {
     category: "social media",
-    action: CONTACT_INFORMATION_ACTION.link,
+    action: "link",
     members: [
       {
         id: 0,
@@ -30,7 +27,7 @@ export const CONTACT_INFORMATION = [
   },
   {
     category: "direct contact",
-    action: CONTACT_INFORMATION_ACTION.copy,
+    action: "copy",
     members: [
       {
         id: 5,
