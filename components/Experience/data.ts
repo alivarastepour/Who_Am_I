@@ -1,3 +1,5 @@
+import { IExperienceDataItem } from "@/interfaces/IExperienceDataItem";
+
 const getDuration = (date: string) => {
   const [start, end] = date.replaceAll(" ", "").split("-");
 
@@ -16,7 +18,7 @@ const getDuration = (date: string) => {
   return duration;
 };
 
-export const EXPERIENCE_DATA = [
+export const EXPERIENCE_DATA: IExperienceDataItem[] = [
   {
     id: 0,
     duration: {
