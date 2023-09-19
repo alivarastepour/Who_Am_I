@@ -1,6 +1,10 @@
-import styles from "@/styles/skillCard.module.scss";
-import { SKILLS } from "./data";
 import { Montserrat, Inter } from "next/font/google";
+
+import styles from "@/styles/skillCard.module.scss";
+
+import { SKILLS } from "./data";
+import { ISkillItem } from "@/interfaces/ISkillItem";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300"],
@@ -9,7 +13,8 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["400"],
 });
-const SkillCard = ({ info }: { info: (typeof SKILLS)[0] }) => {
+
+const SkillCard = ({ info }: { info: ISkillItem }) => {
   const { members, topic } = info;
   const identifier = `${topic.replaceAll(" ", "").toLowerCase()}-wrapper`;
 

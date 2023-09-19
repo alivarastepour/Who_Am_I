@@ -1,4 +1,6 @@
-export const SKILLS = [
+import { ISkillItem } from "@/interfaces/ISkillItem";
+
+export const SKILLS: ISkillItem[] = [
   {
     topic: "tech stack",
     members: [
