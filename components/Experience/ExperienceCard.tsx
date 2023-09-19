@@ -1,14 +1,16 @@
-import styles from "@/styles/experienceCard.module.scss";
-import { EXPERIENCE_DATA } from "./data";
-import Image from "next/image";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
+
+import styles from "@/styles/experienceCard.module.scss";
+
+import { IExperienceDataItem } from "@/interfaces/IExperienceDataItem";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "800"],
 });
 
-const ExperienceCard = ({ info }: { info: (typeof EXPERIENCE_DATA)[0] }) => {
+const ExperienceCard = ({ info }: { info: IExperienceDataItem }) => {
   const {
     company: { industry, homepage, logo, name, about },
     location: { region, type },

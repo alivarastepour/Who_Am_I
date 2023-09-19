@@ -1,12 +1,18 @@
-import styles from "@/styles/experience.module.scss";
-import { EXPERIENCE_DATA } from "./data";
-import ExperienceCard from "./ExperienceCard";
 import { Montserrat } from "next/font/google";
+
+import styles from "@/styles/experience.module.scss";
+
+import { EXPERIENCE_DATA } from "./data";
+
+import ExperienceCard from "./ExperienceCard";
+
 import { useIntersection } from "@/hooks/useIntersection";
+
 const monrserrat = Montserrat({
   subsets: ["latin"],
   weight: ["900"],
 });
+
 const Experience = () => {
   useIntersection({
     observables: [
