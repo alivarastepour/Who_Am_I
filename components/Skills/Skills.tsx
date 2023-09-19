@@ -1,12 +1,18 @@
-import { useIntersection } from "@/hooks/useIntersection";
-import styles from "@/styles/skills.module.scss";
 import { Montserrat } from "next/font/google";
+
+import { useIntersection } from "@/hooks/useIntersection";
+
+import styles from "@/styles/skills.module.scss";
+
 import { SKILLS } from "./data";
+
 import SkillCard from "./SkillCard";
+
 const monrserrat = Montserrat({
   subsets: ["latin"],
   weight: ["900"],
 });
+
 const Skills = () => {
   useIntersection({
     observables: [{ className: styles["lamp-effect"], id: "skills-header" }],

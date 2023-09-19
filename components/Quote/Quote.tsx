@@ -1,8 +1,11 @@
-import styles from "@/styles/quote.module.scss";
 import { Inter } from "next/font/google";
+
+import styles from "@/styles/quote.module.scss";
+
 const inter = Inter({
   subsets: ["latin"],
 });
+
 const Quote = () => {
   return (
     <>

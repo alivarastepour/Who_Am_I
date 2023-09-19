@@ -1,12 +1,15 @@
-import { get } from "@/common/get";
-import styles from "@/styles/whoAmI.module.scss";
-import { Montserrat } from "next/font/google";
 import { useEffect, useState } from "react";
+import { Montserrat } from "next/font/google";
+
+import { get } from "@/common/get";
+
+import styles from "@/styles/whoAmI.module.scss";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["500"],
 });
+
 const WhoAmI = () => {
   const [backgroundState, setBackgroundState] = useState("");
   useEffect(() => {

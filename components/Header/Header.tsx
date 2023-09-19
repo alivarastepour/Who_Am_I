@@ -1,10 +1,10 @@
-import styles from "@/styles/header.module.scss";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import Logo from "@/public/logo.png";
+
+import styles from "@/styles/header.module.scss";
+
 const inter = Inter({
   subsets: ["latin"],
-  
 });
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
             <div className={styles["logo-image"]}>
               <Image
                 alt="site logo; contains ali varaste pour's initials tied to each other"
-                src={Logo}
+                src={"/logo.png"}
                 width={60}
                 height={40}
               />
