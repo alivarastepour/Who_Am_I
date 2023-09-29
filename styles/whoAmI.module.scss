@@ -110,6 +110,42 @@
   }
 }
 
+@media only screen and (min-width: 3000px) {
+  .who-am-i-wrapper {
+    .body {
+      font-size: 3.4rem;
+      line-height: 4.3rem;
+      &::first-letter {
+        font-size: 4.4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
+  .who-am-i-wrapper {
+    .body {
+      font-size: 2.3rem;
+      line-height: 3rem;
+      &::first-letter {
+        font-size: 3.3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 2000px) {
+  .who-am-i-wrapper {
+    .body {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      &::first-letter {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1360px) {
   .who-am-i-wrapper {
     .body {
