@@ -55,6 +55,60 @@
     }
   }
 }
+
+@media only screen and (min-width: 3000px) {
+  .quote-background-wrapper {
+    .quote-wrapper {
+      .quote {
+        max-width: 1800px;
+        font-size: 4rem;
+        line-height: 6rem;
+      }
+      .author {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 2999px) {
+  .quote-background-wrapper {
+    .quote-wrapper {
+      .quote {
+        max-width: 1200px;
+        font-size: 2.7rem;
+        line-height: 3.7rem;
+      }
+      .author {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 1999px) {
+  .quote-background-wrapper {
+    .quote-wrapper {
+      .quote {
+        max-width: 1200px;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 1899px) {
+  .quote-background-wrapper {
+    .quote-wrapper {
+      .quote {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .quote-background-wrapper {
     .quote-wrapper {
