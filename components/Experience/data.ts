@@ -12,7 +12,7 @@ const getDuration = (date: string) => {
   const year = durationRange.getFullYear() - 1970;
   const duration = `${
     year > 0
-      ? `${year} year${year > 1 ? "s" : ""} ${month > 0 ? "and" : ""}`
+      ? `${year} year${year > 1 ? "s" : ""} ${month > 0 ? "and " : ""}`
       : ""
   }${month > 0 ? `${month} month${month > 1 ? "s" : ""}` : ""}`;
   return duration;
