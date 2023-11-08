@@ -30,7 +30,7 @@ export const SKILLS: ISkillItem[] = [
   },
   {
     topic: "familiar with",
-    members: ["ML algorithms", "Relational DBMS"],
+    members: ["Cypress", "ML algorithms", "Relational DBMS"],
   },
   {
     topic: "others",
