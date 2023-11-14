@@ -38,7 +38,7 @@ export const CONTACT_INFORMATION: IContactInformationDataItem[] = [
       {
         id: 4,
         platform: "email",
-        info: "ali.varaste.pour.12122@gmail.com",
+        info: "alivarastep@gmail.com",
         logo: "/gmail-logo.png",
       },
 
