@@ -32,7 +32,7 @@ export const CONTACT_INFORMATION: IContactInformationDataItem[] = [
       {
         id: 5,
         platform: "telegram",
-        info: "@Swishswishmdfk",
+        info: "@Alivarastepour",
         logo: "/telegram-logo.png",
       },
       {
