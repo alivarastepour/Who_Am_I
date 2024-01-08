@@ -40,7 +40,7 @@ export const EXPERIENCE_DATA: IExperienceDataItem[] = [
       type: "hybrid",
     },
     description:
-      "As a front-end developer at Parsimap, I have been responsible for developing a couple of projects under the supervision of my mentor. I have developed a platform that allows Parsimap to write documents for their services. The main challenge in this project was finding and integrating a suitable WYSIWYG editor into a NextJS project. Furthermore, I have been responsible for refactoring some of Parsimap's legacy projects, which proved to be a demanding task since technology has changed a lot since then. This opportunity allowed me to assess my capabilities in rebuilding a project from scratch.",
+      "As a front-end developer at Parsimap, I have been responsible for developing a couple of projects both with, and without the supervision of a mentor. I have developed a platform that allows Parsimap to write documents for their services. The main challenge in this project was finding and integrating a suitable WYSIWYG editor into a NextJS project. Furthermore, I have been responsible for refactoring some of Parsimap's legacy projects, which proved to be a demanding task since technology has changed a lot since then. This opportunity allowed me to assess my capabilities in rebuilding a project from scratch. I have also developed projects that allow Parsimap to showcase its services; namely, a web page that allows direct intercation with Parsimap's dispatching service.",
     techStack: [
       "Javascript",
       "TypeScript",
