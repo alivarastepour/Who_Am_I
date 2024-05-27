@@ -60,12 +60,10 @@ const AllInOnePresenter = () => {
           <div className={styles["info-wrapper"]}>
             <div className={`${styles["title"]} title`}>Soft Skills</div>
             <div className={`${styles["description"]} description`}>
-              With a commitment to consistency and a genuine passion for
-              development, I find immense satisfaction in sharing my knowledge
-              and helping fellow developers thrive. My caring nature extends to
-              our project outputs, where I consistently strive for excellence.
-              Whether through mentorship or personal dedication, I aim to
-              contribute positively to our team and the success of our projects.
+              I thrive the most in environments where I can contribute both 
+              to the people I work with and projects that we are working on. 
+              In the meantime, I welcome feedbacks from other team members and 
+              highly value effective communication. 
             </div>
           </div>
           <div
