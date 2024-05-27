@@ -40,7 +40,7 @@ export const EXPERIENCE_DATA: IExperienceDataItem[] = [
       type: "hybrid",
     },
     description:
-      "As a front-end developer at Parsimap, I have been responsible for developing a couple of projects both with, and without the supervision of a mentor. I have developed a platform that allows Parsimap to write documents for their services. The main challenge in this project was finding and integrating a suitable WYSIWYG editor into a NextJS project. Furthermore, I have been responsible for refactoring some of Parsimap's legacy projects, which proved to be a demanding task since technology has changed a lot since then. This opportunity allowed me to assess my capabilities in rebuilding a project from scratch. I have also developed projects that allow Parsimap to showcase its services; namely, a web page that allows direct intercation with Parsimap's dispatching service.",
+      "As a front-end developer at Parsimap, I have developed a couple of projects both with, and without the supervision of a team lead. I refactored some of Parsimap's legacy projects, which proved to be a demanding task since technology has changed a lot since then. This opportunity allowed me to assess my capabilities in rebuilding projects from scratch and improving existing codebase. I have also developed projects that allow Parsimap to showcase its services; namely, a web page that allows direct interaction with Parsimap's dispatching service. I also had the chance to test my ability to quickly learn and apply new technologies; for instance, I developed an android application using react-native and Java, leveraging Mapbox in a new context.",
     techStack: [
       "Javascript",
       "TypeScript",
