@@ -20,7 +20,6 @@ export const SKILLS: ISkillItem[] = [
     members: [
       "Data Structures",
       "Functional Programming",
-      "Object-Oriented programming",
       "UI principles",
     ],
   },
@@ -30,7 +29,7 @@ export const SKILLS: ISkillItem[] = [
   },
   {
     topic: "familiar with",
-    members: ["Cypress", "ML algorithms", "Relational DBMS"],
+    members: ["Cypress", "ML algorithms"],
   },
     {
     topic: "interests",
